@@ -17,6 +17,18 @@ h1 {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+h3 {
+  color: #00aeef;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
 p {
   text-align: justify;
   color: #000;
@@ -36,4 +48,37 @@ button {
   border: 1px;
   background: #fff;
   border: 1px solid #1e1e1e;
+}
+
+.product_subtext {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin-bottom: 50px;
+}
+
+.products_img {
+  position: relative;
+}
+
+.button_text {
+  position: absolute;
+  top: 90%;     
+  left: 25%; 
+  transform: translate(-50%, -50%);
+  margin: 0 0 20px 25px;
+  background-color: #000;
+  border-radius: 83px;
+  padding: 10px 40px;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
 }
