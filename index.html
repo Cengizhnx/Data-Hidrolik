@@ -17,6 +17,29 @@
     <title>Anasayfa</title>
   </head>
   <body>
+    <!-- Header -->
+    <div
+      class="header d-flex flex-column flex-md-row align-items-center justify-content-between col-md-12 p-3 gap-3 gap-md-0"
+    >
+      <div
+        class="d-flex flex-column flex-md-row align-items-center justify-content-center col-md-6 gap-3"
+      >
+        <img src="img/icons/Vector.png" alt="" />
+        <span class="header_address">info@datahidrolik.com</span>
+      </div>
+      <div
+        class="d-flex flex-column align-items-center justify-content-center flex-md-row col-md-6"
+      >
+        <div class="d-flex flex-row gap-3">
+          <img class="img-fluid" src="img/icons/instagram.png" alt="" />
+          <img class="img-fluid" src="img/icons/facebook.png" alt="" />
+          <img class="img-fluid" src="img/icons/x.png" alt="" />
+          <img class="img-fluid" src="img/icons/youtube.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
     <nav
       class="navbar d-flex align-items-center justify-content-evenly navbar-expand-md p-2"
     >
@@ -59,6 +82,7 @@
       </div>
     </nav>
 
+    <!-- Slider -->
     <div class="overflow-hidden">
       <div class="position-relative">
         <img
@@ -81,9 +105,11 @@
       <div
         class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-5 m-5"
       >
-        <img class="img-fluid w-100" src="img/Group 18.png" alt="" />
+        <div class="col-md-6">
+          <img class="img-fluid w-100" src="img/Group 18.png" alt="" />
+        </div>
         <div
-          class="about d-flex flex-column align-items-center align-items-md-start gap-4"
+          class="about d-flex flex-column col-md-6 align-items-center align-items-md-start gap-4"
         >
           <h1>Data Hidrolik</h1>
           <p class="w-100">
@@ -229,73 +255,30 @@
         </div>
       </div>
 
-      <!-- FAQ -->
+      <!-- Video -->
       <div
-        class="faq d-flex flex-column flex-md-row align-items-center justify-content-center col-md-12 gap-5 mb-5 p-5 rounded"
+        class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-5 p-5 gap-5 col-md-12 rounded"
       >
-        <div class="d-flex flex-column col-md-6 gap-4 p-4">
-          <h3 class="faq_title">
-            Bir sorunuz mu var?
+        <div class="d-flex flex-column text-start col-md-3 gap-3">
+          <h1 class="text-center text-md-start video_title">
+            Kurumsal
             <br />
-            Yardım etmek için buradayız
-          </h3>
-          <p class="faq_text">
-            Müşterilerimizin en sık sorduğu sorulara göz atın.
+            Videomuza
             <br />
-            Hala sorularınız mı var?
-            <br />
-            <br />
-            Daha fazlasını görmeye davet ediyoruz.
+            Göz Atın!
+          </h1>
+          <p class="video_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et
+            urna eu ipsum dapibus interdum sit amet et ante. <br />
           </p>
-          <button class="button_black">Tümünü Gör</button>
         </div>
-        <div class="faq_list d-flex flex-column col-12 col-md-6 p-4 rounded">
-          <div class="d-flex flex-column">
-            <div
-              class="faq_list_row pb-4 d-flex flex-row justify-content-between"
-            >
-              <h5 class="faq_list_title">Lorem ipsum dolor sit amet?</h5>
-              <button class="faq_list_button">&#x2228;</button>
-            </div>
-            <div
-              class="faq_list_row py-4 d-flex flex-row justify-content-between"
-            >
-              <h5 class="faq_list_title">Consectetur adipiscing elit?</h5>
-              <button class="faq_list_button">&#x2228;</button>
-            </div>
-            <div
-              class="faq_list_row py-4 d-flex flex-row justify-content-between"
-            >
-              <h5 class="faq_list_title">Vestibulum molestiere tempor?</h5>
-              <button class="faq_list_button">&#x2228;</button>
-            </div>
-            <div
-              class="faq_list_row py-4 d-flex flex-row justify-content-between"
-            >
-              <h5 class="faq_list_title">
-                Lacus nisl laoreet est, non blandit?
-              </h5>
-              <button class="faq_list_button">&#x2228;</button>
-            </div>
-            <div
-              class="faq_list_row py-4 d-flex flex-row justify-content-between"
-            >
-              <h5 class="faq_list_title">Lorem ipsum dolor sit amet?</h5>
-              <button class="faq_list_button">&#x2228;</button>
-            </div>
-            <div
-              class="faq_list_row py-4 d-flex flex-row justify-content-between"
-            >
-              <h5 class="faq_list_title">Lorem ipsum dolor sit amet?</h5>
-              <button class="faq_list_button">&#x2228;</button>
-            </div>
-          </div>
+        <div class="d-flex flex-column col-12 col-md-9 rounded">
+          <img src="img/saku-ponkanen-oiOjpATf4hY-unsplash 1.png" alt="" />
         </div>
       </div>
     </div>
 
     <!-- Footer -->
-
     <div
       class="footer d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-evenly col-md-12 gap-5 gap-md-0 p-5"
     >
@@ -378,16 +361,18 @@
     </div>
 
     <div
-      class="footer_alt d-flex flex-column align-items-center flex-md-row col-md-12 py-4 gap-4 gap-md-0"
+      class="footer_alt d-flex flex-column align-items-center flex-md-row col-md-12 px-4 py-3 gap-4 gap-md-0"
     >
       <div
-        class="d-flex flex-column flex-md-row align-items-center justify-content-center col-6 gap-3 gap-md-5"
+        class="d-flex flex-column flex-md-row align-items-center justify-content-evenly col-md-6 gap-3 gap-md-0"
       >
         <a href="" class="footer_alt_text">İK DEĞERLERİMİZ</a>&#x2022;
         <a href="" class="footer_alt_text">GİZLİLİK POLİTİKASI</a>&#x2022;
         <a href="" class="footer_alt_text">ŞARTLAR VE KOŞULLAR</a>
       </div>
-      <p class="m-auto footer_alt_cpy">Copyright © 2023, Data Hidrolik</p>
+      <div class="col-md-6 px-1">
+        <p class="m-auto footer_alt_cpy">Copyright © 2023, Data Hidrolik</p>
+      </div>
     </div>
 
     <script

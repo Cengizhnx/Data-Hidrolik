@@ -10,6 +10,18 @@
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.header {
+  background-color: var(--color-dark);
+}
+
+.header_address {
+  font-family: var(--default-font);
+  color: var(--color-primary-blue);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
 .navbarFont {
   font-size: 12px;
   font-weight: 400;
@@ -230,28 +242,20 @@
   background: var(--color-brown);
 }
 
-.faq {
-  background-color: var(--color-grey);
-}
-
-.faq_title {
+.video_title {
   font-family: var(--default-font);
   color: var(--color-primary-blue);
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 49px;
-  letter-spacing: 0em;
-  text-align: left;
+  line-height: 48px;
 }
 
-.faq_text {
+.video_text {
   color: var(--color-dark);
   font-family: var(--default-font);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .faq_list {
@@ -349,7 +353,6 @@
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 .footer_alt_text:hover {
@@ -363,7 +366,7 @@
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: end;
 }
 
 @media screen and (min-width: 1750px) {
