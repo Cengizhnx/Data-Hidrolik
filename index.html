@@ -12,17 +12,20 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-
     <title>Anasayfa</title>
   </head>
   <body>
     <!-- Header -->
     <div
-      class="header d-flex flex-column flex-md-row align-items-center justify-content-between col-md-12 p-3 gap-3 gap-md-0"
+      class="header d-flex align-items-center justify-content-between col-md-12 p-3 gap-3 gap-md-0"
     >
       <div
-        class="d-flex flex-column flex-md-row align-items-center justify-content-center col-md-6 gap-3"
+        class="d-flex align-items-center justify-content-center col-md-6 gap-3"
       >
         <img src="img/icons/Vector.png" alt="" />
         <span class="header_address">info@datahidrolik.com</span>
@@ -41,43 +44,65 @@
 
     <!-- Navbar -->
     <nav
-      class="navbar d-flex align-items-center justify-content-evenly navbar-expand-md p-2"
+      class="navbar navbar-expand-md container-md d-flex align-items-center justify-content-between px-2 px-md-5"
     >
-      <button
-        class="navbar-toggler align-self-center"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       <div
-        class="collapse navbar-collapse justify-content-evenly"
-        id="navbarNavAltMarkup"
+        class="container-md d-flex align-items-center justify-content-md-center px-md-5"
       >
-        <div class="navbar-nav text-end pe-1">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
+        <button
+          class="navbar-toggler border-0 p-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- <span class=""><i class="bi bi-three-dots fs-2"></i></span> -->
+          <span class=""><i class="bi bi-dash-lg fs-1"></i></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavAltMarkup"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link navbarFont" aria-current="page" href="#"
+                >ANASAYFA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbarFont" href="#">HAKKIMIZDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbarFont" href="#">ALANLAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbarFont" href="#">ÜRÜNLER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbarFont" href="#">ARGE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbarFont" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbarFont" href="#">S.S.S</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbarFont" href="#">İLETİŞİM</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-md-flex flex-row gap-3">
           <a class="navbar-brand align-self-center" href="#"
-            ><img src="img/logo.png"
-          /></a>
-          <a class="nav-link navbarFont" aria-current="page" href="#"
-            >ANASAYFA</a
-          >
-          <a class="nav-link navbarFont" href="#">HAKKIMIZDA</a>
-          <a class="nav-link navbarFont" href="#">ALANLAR</a>
-          <a class="nav-link navbarFont" href="#">ÜRÜNLER</a>
-          <a class="nav-link navbarFont" href="#">BLOG</a>
-          <a class="nav-link navbarFont" href="#">S.S.S</a>
-          <a class="nav-link navbarFont" href="#">İLETİŞİM</a>
+            ><i class="bi bi-search fs-4"></i
+          ></a>
           <a class="navbar-brand align-self-center" href="#"
-            ><img src="img/search.png"
-          /></a>
-          <a class="navbar-brand align-self-center" href="#"
-            ><img src="img/language.png"
-          /></a>
+            ><i class="bi bi-globe fs-4"></i
+          ></a>
         </div>
       </div>
     </nav>
