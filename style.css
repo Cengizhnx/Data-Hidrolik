@@ -4,6 +4,7 @@
   --color-secondary: #d9d9d9;
   --color-grey: #f9f8f6;
   --color-brown: #313131;
+  --color-light-brown: #3c3c3c;
   --color-dark: #1e1e1e;
   --color-dark-grey: #dfe5ef;
   --default-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -29,6 +30,26 @@
   line-height: 16.39px;
   margin: 12.5px;
   text-align: center;
+}
+
+.navbar-icons {
+  color: var(--color-dark);
+  transition: transform 0.2s;
+}
+.navbar-icons:hover {
+  color: var(--color-dark);
+  transform: scale(1.1);
+}
+
+.slider-arrow {
+  position: absolute;
+  bottom: 7%;
+  right: 11%;
+}
+
+.slider-arrow button {
+  border: none;
+  background-color: transparent;
 }
 
 .slider_header {
@@ -61,6 +82,11 @@
   border: none;
   padding: 18px 40px 18px 40px;
   border-radius: 86px;
+  transition: 0.5s;
+}
+
+.slider_button:hover {
+  background-color: var(--color-dark-grey);
 }
 
 .about h1 {
@@ -90,6 +116,11 @@
   border: 1px;
   background: #fff;
   border: 1px solid var(--color-dark);
+  transition: 0.5s;
+}
+
+.about button:hover {
+  background-color: var(--color-grey);
 }
 
 .products h3 {
@@ -120,6 +151,11 @@
   max-height: 364px;
   width: 100%;
   height: auto;
+  transition: transform 0.2s;
+}
+
+.products_image:hover {
+  transform: scale(1.02);
 }
 
 .products_button {
@@ -134,6 +170,57 @@
   border: 1px;
   color: #fff;
   background: var(--color-brown);
+  transition: 0.1s;
+}
+
+.products_button:hover {
+  background-color: var(--color-light-brown);
+}
+
+.sales_input {
+  font-family: var(--default-font);
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  border: 1.5px solid #dfe5ef;
+  border-radius: 8px;
+  padding: 14px 14px 14px 15px;
+}
+
+.sales_country {
+  font-family: var(--default-font);
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.sales_header {
+  background-color: var(--color-grey);
+}
+
+.sales_title {
+  font-family: var(--default-font);
+  color: var(--color-primary-blue);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+}
+.service_title {
+  font-family: var(--default-font);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.service_text {
+  font-family: var(--default-font);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 .button_text {
@@ -150,6 +237,14 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 19.2px;
+}
+
+.banner img {
+  transition: transform 0.4s;
+}
+
+.banner img:hover {
+  transform: scale(1.02);
 }
 
 .banner_text {
@@ -190,6 +285,14 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
+}
+
+.blog-post img {
+  transition: transform 0.2s;
+}
+
+.blog-post img:hover {
+  transform: scale(1.02);
 }
 
 .blog_date {
@@ -240,6 +343,11 @@
   border: 1px;
   color: #fff;
   background: var(--color-brown);
+  transition: 0.1s;
+}
+
+.button_black:hover {
+  background-color: var(--color-light-brown);
 }
 
 .video_title {
@@ -367,6 +475,16 @@
   line-height: 19px;
   letter-spacing: 0em;
   text-align: end;
+}
+
+.social_icons {
+  color: var(--color-primary-blue);
+  transition: transform 0.2s;
+}
+
+.social_icons:hover {
+  color: var(--color-primary-blue);
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 1750px) {
@@ -552,7 +670,7 @@
     font-size: 10px;
     padding: 5px 10px;
   }
-  .header_address{
+  .header_address {
     display: none;
   }
   .banner_text {
