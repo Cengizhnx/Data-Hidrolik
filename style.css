@@ -120,7 +120,6 @@
 .about button {
   font-size: 16px;
   font-weight: 600;
-  width: 221px;
   padding: 18px 64px 18px 64px;
   border-radius: 86px;
   border: 1px;
@@ -135,7 +134,7 @@
 
 /* Products */
 
-.products h3 {
+.products h1 {
   color: var(--color-primary-blue);
   font-family: var(--default-font);
   font-size: 36px;
@@ -189,6 +188,72 @@
   background-color: var(--color-light-brown);
 }
 
+/* Sales Point */
+
+.sales-search > div > input {
+  font-family: var(--default-font);
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  border: 1.5px solid #dfe5ef;
+  border-radius: 8px;
+  padding: 14px 14px 14px 15px;
+}
+
+.sales-search > ul > li {
+  cursor: pointer;
+  font-family: var(--default-font);
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.sales-service > div {
+  background-color: var(--color-grey);
+}
+
+.sales-service h1 {
+  font-family: var(--default-font);
+  color: var(--color-primary-blue);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.service-title {
+  font-family: var(--default-font);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.service-text {
+  font-family: var(--default-font);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+/* List Scroll Bar */
+
+.list-group::-webkit-scrollbar {
+  width: 5px;
+}
+
+.list-group::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--color-dark-grey);
+}
+
+.list-group-item:hover {
+  background-color: #e6f7fd;
+  font-weight: 600;
+}
+
 .button_text {
   position: absolute;
   top: 90%;
@@ -237,7 +302,7 @@
 
 /* Blog */
 
-.blog h3 {
+.blog h1 {
   color: var(--color-primary-blue);
   font-family: var(--default-font);
   font-size: 36px;
@@ -305,10 +370,9 @@
   color: var(--color-dark-blue);
 }
 
-.button_black {
+.button-black {
   font-size: 16px;
   font-weight: 700;
-  width: 155px;
   position: relative;
   padding: 10px 30px 10px 30px;
   border-radius: 86px;
@@ -318,7 +382,7 @@
   transition: 0.1s;
 }
 
-.button_black:hover {
+.button-black:hover {
   background-color: var(--color-light-brown);
 }
 
@@ -453,6 +517,16 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .about h1 {
+    font-size: 56px;
+  }
+  .video h1 {
+    font-size: 36px;
+  }
+  .service-title,
+  .service-text {
+    font-size: 12.5px;
+  }
   .slider-header {
     top: 15%;
     left: 12.5%;
@@ -486,6 +560,45 @@
 }
 
 @media screen and (max-width: 992px) {
+  .about h1 {
+    font-size: 46px;
+  }
+  .about p,
+  .products p,
+  .blog p,
+  .video p {
+    font-size: 13px;
+  }
+  .about button {
+    font-size: 14px;
+    padding: 14px 56px 14px 56px;
+  }
+  .blog-post span {
+    font-size: 11.5px;
+    line-height: 16.39px;
+  }
+
+  .blog-post h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .blog-post p {
+    font-size: 13px;
+  }
+
+  .blog-post a {
+    font-size: 13px;
+  }
+  .video h1 {
+    font-size: 32px;
+  }
+  .sales-search > ul > li {
+    font-size: 16px;
+  }
+  .sales-service h1 {
+    font-size: 20px;
+  }
   .slider-header {
     padding: 30px;
   }
@@ -516,6 +629,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .button-black {
+    font-size: 14px;
+    padding: 9px 28px 9px 28px;
+  }
   .slider-header {
     padding: 25px;
   }
@@ -546,6 +663,16 @@
 }
 
 @media screen and (max-width: 576px) {
+  .video h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .sales-search > ul > li {
+    font-size: 15px;
+  }
+  .sales-service h1 {
+    font-size: 18.5px;
+  }
   .slider-header {
     padding: 20px;
   }
@@ -576,6 +703,24 @@
 }
 
 @media screen and (max-width: 465px) {
+  .about h1 {
+    font-size: 40px;
+  }
+  .about button {
+    font-size: 13px;
+    padding: 12px 52px 12px 52px;
+  }
+  .blog h1,
+  .products h1 {
+    font-size: 32px;
+  }
+  .button-black {
+    font-size: 13px;
+    padding: 8px 26px 8px 26px;
+  }
+  .video h1 {
+    font-size: 28px;
+  }
   .slider-header {
     padding: 15px;
   }
@@ -600,6 +745,46 @@
 }
 
 @media screen and (max-width: 370px) {
+  .about h1 {
+    font-size: 33.5px;
+  }
+  .about button {
+    font-size: 12px;
+    padding: 12px 46px 12px 46px;
+  }
+  .about p,
+  .products p,
+  .blog p,
+  .video p {
+    font-size: 12px;
+  }
+  .blog-post span {
+    font-size: 10.5px;
+  }
+  .blog-post h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .blog-post p {
+    font-size: 12px;
+  }
+  .blog-post a {
+    font-size: 12px;
+  }
+  .blog h1,
+  .products h1 {
+    font-size: 28px;
+  }
+  .button-black {
+    font-size: 12px;
+    padding: 7.5px 24.5px 7.5px 24.5px;
+  }
+  .sales-search > ul > li {
+    font-size: 14px;
+  }
+  .sales-service h1 {
+    font-size: 16.5px;
+  }
   .slider-header {
     padding: 12.5px;
   }
@@ -633,6 +818,22 @@
 }
 
 @media screen and (max-width: 330px) {
+  .about h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .blog h1,
+  .products h1 {
+    font-size: 26px;
+  }
+  .video h1 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .service-title,
+  .service-text {
+    font-size: 12px;
+  }
   .slider-header {
     padding: 10px;
   }
