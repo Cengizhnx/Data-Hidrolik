@@ -33,8 +33,13 @@
   font-weight: 400;
   color: black;
   line-height: 16.39px;
-  margin: 12.5px;
+  margin: 10px;
   text-align: center;
+}
+
+.navbar-nav > li > a:hover {
+  font-weight: 500;
+  color: #000;
 }
 
 .navbar-icons {
@@ -45,6 +50,103 @@
 .navbar-icons:hover {
   color: var(--color-dark);
   transform: scale(1.1);
+}
+
+/* Dropdown */
+
+.dropdown-about,
+.dropdown-products {
+  border-top: 1px solid var(--color-primary-blue);
+  display: none;
+  position: absolute;
+  background-color: var(--color-grey);
+  z-index: 99;
+}
+
+/* .navbar-about:hover ~ .dropdown-about {
+  display: block;
+}
+
+.navbar-products:hover ~ .dropdown-products {
+  display: block;
+} */
+
+.dropdown-about > div > div > h4,
+.dropdown-products > div > div > h4,
+.dropdown-search > div > h4,
+.dropdown-lang > div > h4 {
+  font-family: var(--default-font);
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.dropdown-about > div > div > div > a,
+.dropdown-products > div > div > div > a,
+.dropdown-search > div > div > a,
+.dropdown-lang > div > div > a {
+  font-family: var(--default-font);
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.39px;
+  text-decoration: none;
+}
+
+.dropdown-about > div > div > div > a:hover,
+.dropdown-products > div > div > div > a:hover,
+.dropdown-search > div > div > a:hover,
+.dropdown-lang > div > div > a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-about > div > div > p,
+.dropdown-products > div > div > p {
+  font-family: var(--default-font);
+  color: var(--color-brown);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: auto;
+}
+
+.dropdown-search {
+  display: none;
+  position: absolute;
+  background-color: var(--color-grey);
+  z-index: 99;
+  right: 5%;
+  top: 5px;
+}
+
+.dropdown-search > div > input {
+  font-family: var(--default-font);
+  background-color: var(--color-grey);
+  color: var(--color-dark);
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0px;
+  padding: 4px;
+}
+
+.dropdown-search > div > input::placeholder {
+  opacity: 0.3;
+}
+
+.dropdown-search > div > input:focus {
+  outline: none;
+}
+
+.dropdown-lang {
+  display: none;
+  position: absolute;
+  background-color: var(--color-grey);
+  z-index: 99;
+  right: 9%;
+  top: 5px;
 }
 
 /* Slider */
@@ -58,6 +160,19 @@
 .slider-arrow button {
   border: none;
   background-color: transparent;
+}
+
+.slider-arrow button span {
+  color: #fff;
+  font-size: 52px;
+}
+
+.slider-arrow button:first-child span::before {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 
 .slider-header {
@@ -500,6 +615,9 @@
 }
 
 @media screen and (min-width: 1750px) {
+  .dropdown-search {
+    right: 9%;
+  }
   .banner > p {
     left: 27.5%;
   }
@@ -517,6 +635,13 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .dropdown-search {
+    right: 0.5%;
+    top: 5px;
+  }
+  .dropdown-lang {
+    right: 0.9%;
+  }
   .about h1 {
     font-size: 56px;
   }
@@ -599,6 +724,13 @@
   .sales-service h1 {
     font-size: 20px;
   }
+  .slider-arrow {
+    bottom: 4%;
+    right: 8%;
+  }
+  .slider-arrow button span {
+    font-size: 40px;
+  }
   .slider-header {
     padding: 30px;
   }
@@ -629,9 +761,20 @@
 }
 
 @media screen and (max-width: 768px) {
+  .dropdown-search,
+  .dropdown-lang {
+    visibility: hidden;
+  }
   .button-black {
     font-size: 14px;
     padding: 9px 28px 9px 28px;
+  }
+  .slider-arrow {
+    bottom: 3.5%;
+    right: 7%;
+  }
+  .slider-arrow button span {
+    font-size: 32px;
   }
   .slider-header {
     padding: 25px;
@@ -672,6 +815,13 @@
   }
   .sales-service h1 {
     font-size: 18.5px;
+  }
+  .slider-arrow {
+    bottom: 3.5%;
+    right: 5.5%;
+  }
+  .slider-arrow button span {
+    font-size: 26px;
   }
   .slider-header {
     padding: 20px;
@@ -720,6 +870,13 @@
   }
   .video h1 {
     font-size: 28px;
+  }
+  .slider-arrow {
+    bottom: 3%;
+    right: 5%;
+  }
+  .slider-arrow button span {
+    font-size: 20px;
   }
   .slider-header {
     padding: 15px;
@@ -785,6 +942,13 @@
   .sales-service h1 {
     font-size: 16.5px;
   }
+  .slider-arrow {
+    bottom: 2.5%;
+    right: 4%;
+  }
+  .slider-arrow button span {
+    font-size: 17.5px;
+  }
   .slider-header {
     padding: 12.5px;
   }
@@ -834,6 +998,13 @@
   .service-text {
     font-size: 12px;
   }
+  .slider-arrow {
+    bottom: 3%;
+    right: 3.5%;
+  }
+  .slider-arrow button span {
+    font-size: 15.5px;
+  }
   .slider-header {
     padding: 10px;
   }
@@ -864,6 +1035,13 @@
 }
 
 @media screen and (max-width: 260px) {
+  .slider-arrow {
+    bottom: 3%;
+    right: 2.5%;
+  }
+  .slider-arrow button span {
+    font-size: 12.5px;
+  }
   .slider-header {
     padding: 8px;
   }
