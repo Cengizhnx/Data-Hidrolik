@@ -85,15 +85,74 @@
             <li class="nav-item">
               <a class="nav-link" href="#">ANASAYFA</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-md-flex">
               <a class="nav-link navbar-about" href="#">HAKKIMIZDA</a>
             </li>
+            <!-- Mobile Dropdown About -->
+            <li class="nav-item dropdown d-block d-md-none">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                HAKKIMIZDA
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item" href="#">Tarihçe</a></li>
+                <li><a class="dropdown-item" href="#">Vizyon & Misyon</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Kalite Politikamız</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Satış Sonrası</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Kalite</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Mobile Dropdown About -->
             <li class="nav-item">
               <a class="nav-link" href="#">ALANLAR</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-md-flex">
               <a class="nav-link navbar-products" href="#">ÜRÜNLER</a>
             </li>
+            <!-- Mobile Dropdown Products -->
+            <li class="nav-item dropdown d-block d-md-none">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ÜRÜNLER
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Zincir Irgatları & Manevra Irgatları</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Dümen Sistemleri</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Palamar Kancası</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Palamar Tutucu</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Vinçler</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Özel Ürünler</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Mobile Dropdown Products -->
             <li class="nav-item">
               <a class="nav-link" href="#">ARGE</a>
             </li>
@@ -107,14 +166,35 @@
               <a class="nav-link" href="#">İLETİŞİM</a>
             </li>
           </ul>
+          <!-- Mobile Search & Language -->
+          <div class="d-flex flex-row justify-content-center gap-2 d-md-none">
+            <form class="w-50" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Arama yapın..."
+                aria-label="Search"
+              />
+            </form>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                🇹🇷 Türkçe
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">🇬🇧 İngilizce</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="d-none d-md-flex flex-row gap-3">
           <span role="button" class="navbar-brand navbar-icons navbar-search"
             ><i class="bi bi-search fs-4"></i>
           </span>
-          <!-- <span role="button" class="navbar-brand navbar-icons navbar-search"
-            ><i class="bi bi-x-circle-fill fs-4"></i>
-          </span> -->
           <span role="button" class="navbar-brand navbar-icons navbar-lang"
             ><i class="bi bi-globe fs-4"></i
           ></span>

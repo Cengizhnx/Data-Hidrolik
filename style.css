@@ -28,6 +28,10 @@
 
 /* Navbar */
 
+.navbar-nav .dropdown-menu {
+  padding: 0;
+}
+
 .navbar-nav > li > a {
   font-size: 12px;
   font-weight: 400;
@@ -37,7 +41,19 @@
   text-align: center;
 }
 
-.navbar-nav > li > a:hover {
+.navbar-nav > li > ul > li > a {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+  line-height: 16.39px;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > ul > li > a:hover,
+.collapse > div > div > ul > li > a:hover {
+  background-color: transparent;
   font-weight: 500;
   color: #000;
 }
@@ -52,6 +68,24 @@
   transform: scale(1.1);
 }
 
+/* Mobile Search Input */
+.collapse > div > form > input {
+  font-family: var(--default-font);
+  color: var(--color-dark);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 8px;
+}
+
+.collapse > div > div > button,
+.collapse > div > div > ul > li > a {
+  font-family: var(--default-font);
+  color: var(--color-dark);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 6px 8px;
+}
+
 /* Dropdown */
 
 .dropdown-about,
@@ -62,14 +96,6 @@
   background-color: var(--color-grey);
   z-index: 99;
 }
-
-/* .navbar-about:hover ~ .dropdown-about {
-  display: block;
-}
-
-.navbar-products:hover ~ .dropdown-products {
-  display: block;
-} */
 
 .dropdown-about > div > div > h4,
 .dropdown-products > div > div > h4,
@@ -762,7 +788,9 @@
 
 @media screen and (max-width: 768px) {
   .dropdown-search,
-  .dropdown-lang {
+  .dropdown-lang,
+  .dropdown-about,
+  .dropdown-products {
     visibility: hidden;
   }
   .button-black {
