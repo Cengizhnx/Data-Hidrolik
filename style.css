@@ -820,6 +820,10 @@
   .carousel {
     max-height: 500px;
   }
+  .dropdown-about,
+  .dropdown-products {
+    top: 74.5px;
+  }
   .dropdown-search {
     right: 0.5%;
     top: 5px;
