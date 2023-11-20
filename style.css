@@ -14,23 +14,18 @@
 }
 
 @font-face {
-  font-family: 'Avenir Next Regular';
-  src: url('assets/fonts/AvenirNext-Regular-08.ttf') format('truetype');
+  font-family: "Avenir Next Regular";
+  src: url("assets/fonts/AvenirNext-Regular-08.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Avenir Next Medium';
-  src: url('assets/fonts/AvenirNext-Medium-06.ttf') format('truetype');
+  font-family: "Avenir Next Medium";
+  src: url("assets/fonts/AvenirNext-Medium-06.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Avenir Next Demi Bold';
-  src: url('assets/fonts/AvenirNext-DemiBold-03.ttf') format('truetype');
-}
-
-.display-on {
-  display: flex;
-  transition-duration: 0.9s;
+  font-family: "Avenir Next Demi Bold";
+  src: url("assets/fonts/AvenirNext-DemiBold-03.ttf") format("truetype");
 }
 
 .caption {
@@ -56,6 +51,20 @@
 }
 
 /* Navbar */
+
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar .nav-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar .nav-item:hover {
+  border-bottom: 3px solid var(--color-primary-blue);
+}
 
 .navbar-nav .dropdown-menu {
   padding: 0;
@@ -89,7 +98,7 @@
 .navbar-nav > li > ul > li > a:hover,
 .collapse > div > div > ul > li > a:hover {
   background-color: transparent;
-  font-weight: 500;
+  font-weight: 600;
   color: #000;
 }
 
@@ -130,7 +139,7 @@
   position: absolute;
   background-color: var(--color-grey);
   z-index: 99;
-  top: 68px;
+  top: 75px;
   left: 0px;
 }
 
@@ -309,6 +318,7 @@
   background: #fff;
   border: 1px solid var(--color-dark);
   transition: 0.5s;
+  color: var(--color-dark);
 }
 
 .about button:hover {
@@ -420,6 +430,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
+}
+
+.display-on {
+  display: flex;
+  transition-duration: 0.9s;
 }
 
 /* List Scroll Bar */
@@ -763,7 +778,7 @@
   left: 0px;
 }
 
-.timeline .event.selected::after  {
+.timeline .event.selected::after {
   -webkit-box-shadow: 0 0 0 1px var(--color-primary-blue);
   box-shadow: 0 0 0 1px var(--color-primary-blue);
   background: var(--color-primary-blue);
