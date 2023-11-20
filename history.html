@@ -65,7 +65,7 @@
         class="container-md d-flex align-items-center justify-content-md-center px-md-5"
       >
         <a class="navbar-brand" href="/"
-          ><img src="img/data-hidrolik-logo.webp"
+          ><img src="assets/img/data-hidrolik-logo.webp"
         /></a>
         <button
           class="navbar-toggler border-0 p-1"
@@ -108,7 +108,7 @@
                     class="d-flex flex-column col-md-6 align-items-center justify-content-between gap-3"
                   >
                     <img
-                      src="img/data-hidrolik-merkez.webp"
+                      src="assets/img/data-hidrolik-merkez.webp"
                       class="img-fluid"
                       alt="data hidrolik merkez"
                       title="DATA HİDROLİK MAKİNA SANAYİ A.Ş. MERKEZ"
@@ -130,7 +130,7 @@
                 HAKKIMIZDA
               </a>
               <ul class="dropdown-menu border-0">
-                <li><a class="dropdown-item" href="#">Tarihçe</a></li>
+                <li><a class="dropdown-item" href="/history.html">Tarihçe</a></li>
                 <li><a class="dropdown-item" href="#">Vizyon & Misyon</a></li>
                 <li>
                   <a class="dropdown-item" href="#">Kalite Politikamız</a>
@@ -169,7 +169,7 @@
                     class="d-flex flex-column col-md-6 align-items-center justify-content-between gap-3"
                   >
                     <img
-                      src="img/urunler.webp"
+                      src="assets/img/urunler.webp"
                       class="img-fluid"
                       alt="Ürünlerimiz"
                       title="Data hidrolik ürünlerimiz"
@@ -263,7 +263,7 @@
 
     <section>
       <div>
-        <img class="img-fluid w-100" src="img/data-merkez.webp" alt="" />
+        <img class="img-fluid w-100" src="assets/img/data-merkez.webp" alt="Data hidrolik merkez" />
       </div>
     </section>
 
@@ -280,9 +280,9 @@
         <div class="col-md-12 mx-5">
           <ul class="timeline gap-5 gap-md-0">
             <li
-              class="event d-flex flex-column flex-md-row align-items-center p-3 p-md-5 gap-4 gap-md-5"
+              class="event selected d-flex flex-column flex-md-row align-items-center p-3 p-md-5 gap-4 gap-md-5"
             >
-              <img src="img/dumen.webp" class="img-fluid" alt="Dümen" />
+              <img src="assets/img/dumen.webp" class="img-fluid" alt="Dümen" />
               <div class="d-flex flex-column">
                 <h3>1945</h3>
                 <p>
@@ -294,15 +294,16 @@
             <li
               class="event d-flex flex-column flex-md-row align-items-center p-3 p-md-5 gap-4 gap-md-5"
             >
-              <img src="img/dumen.webp" class="img-fluid" alt="Dümen" />
+              <img src="assets/img/dumen.webp" class="img-fluid" alt="Dümen" />
               <div class="d-flex flex-column">
-                <h3>1948</h3>
+                <h3>1951</h3>
                 <p>
                   DATA dümen sistemleri ve güverte makinalarının tasarım ve
                   üretimi üzerine 1945 yılından beri uzmanlaşmıştır.
                 </p>
               </div>
             </li>
+
           </ul>
         </div>
       </div>
@@ -328,7 +329,7 @@
             <div class="blog-post d-flex flex-column col-md-4 gap-2">
               <img
                 class="rounded img-fluid mb-2"
-                src="img/yat-guverte.webp"
+                src="assets/img/yat-guverte.webp"
                 alt="yat güverte"
                 title="Data hidrolik yat güverte"
               />
@@ -344,7 +345,7 @@
             <div class="blog-post d-flex flex-column col-md-4 gap-2">
               <img
                 class="rounded img-fluid mb-2"
-                src="img/gemi.webp"
+                src="assets/img/gemi.webp"
                 alt="gemi"
                 title="Data hidrolik gemi"
               />
@@ -360,7 +361,7 @@
             <div class="blog-post d-flex flex-column col-md-4 gap-2">
               <img
                 class="rounded img-fluid mb-2"
-                src="img/yat2.webp"
+                src="assets/img/yat2.webp"
                 alt="yat"
                 title="Data hidrolik yat"
               />
@@ -397,7 +398,7 @@
           </div>
           <div class="d-flex flex-column col-12 col-md-9 rounded">
             <img
-              src="img/kaptan-kosku.webp"
+              src="assets/img/kaptan-kosku.webp"
               alt="kaptan köşkü"
               title="Data hidrolik kaptan köşkü"
             />
@@ -419,7 +420,7 @@
         >
           <img
             class="img-fluid"
-            src="img/data-hidrolik-logo-beyaz.webp"
+            src="assets/img/data-hidrolik-logo-beyaz.webp"
             alt=""
           />
           <p>
@@ -564,10 +565,12 @@
           listItems.forEach((li) => {
             console.log(li);
             if (li !== item) {
+              li.classList.remove("selected")
               li.classList.add("invisible");
             }
           });
           item.classList.add("visible");
+          item.classList.add("selected")
         });
       });
     </script>
