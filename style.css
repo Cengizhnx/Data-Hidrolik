@@ -61,10 +61,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
+/* 
 .navbar .nav-item:hover {
   border-bottom: 3px solid var(--color-primary-blue);
-}
+} */
 
 .navbar-nav .dropdown-menu {
   padding: 0;
@@ -139,7 +139,7 @@
   position: absolute;
   background-color: var(--color-grey);
   z-index: 99;
-  top: 75px;
+  top: 72px;
   left: 0px;
 }
 
@@ -733,7 +733,7 @@
   line-height: 19px;
 }
 
-.timeline > li > img {
+.timeline > li > div > img {
   box-shadow: 0px 0px 20px 0px #00000040;
   border-radius: 8px;
   transform: rotate(-0.9deg);
@@ -743,12 +743,6 @@
 .timeline .event {
   position: relative;
   cursor: pointer;
-}
-
-.timeline .event:last-of-type {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
 }
 
 .timeline .event:before,
@@ -782,6 +776,142 @@
   -webkit-box-shadow: 0 0 0 1px var(--color-primary-blue);
   box-shadow: 0 0 0 1px var(--color-primary-blue);
   background: var(--color-primary-blue);
+}
+
+/* Vision - Mission  */
+
+.vision img {
+  box-shadow: 0px 0px 20px 0px #00000040;
+  border-radius: 8px;
+  transform: rotate(3.2deg);
+  background-color: var(--color-dark-grey);
+}
+
+.vision h1 {
+  font-family: var(--default-font-medium);
+  color: var(--color-primary-blue);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+}
+
+.vision p {
+  font-family: var(--color-primary-blue);
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: inherit;
+  width: 40%;
+}
+
+/* Trailer */
+
+.trailer {
+  position: relative;
+}
+
+.trailer > div {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.trailer h1 {
+  color: #fff;
+  font-family: var(--default-font-medium);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  text-align: center;
+}
+
+.trailer p {
+  color: #fff;
+  font-family: var(--default-font-regular);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 49px;
+  text-align: center;
+}
+
+/* Quality Policy */
+
+.quality-policy > p,
+.quality-policy > ul > li,
+.quality-policy div > div > p,
+.quality-policy div > ul > li,
+.quality-policy div > div > ul > li {
+  font-family: var(--default-font-regular);
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: justify;
+}
+
+/* Opened Div */
+
+.opened-div {
+  border-top: 1px solid var(--color-primary-blue);
+  border-bottom: 1px solid var(--color-primary-blue);
+}
+
+.opened-div > div > h1 {
+  font-family: var(--default-font-medium);
+  color: #000;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.opened-div > div > ul {
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.opened-div > div > ul > li {
+  font-family: var(--default-font-regular);
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* Certificates */
+
+.certificates {
+  border-right: 1px solid var(--color-dark);
+}
+
+.certificates > div > p {
+  font-family: var(--default-font-demi-bold);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.certificates-list > p {
+  color: #000;
+  font-family: var(--default-font-medium);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+}
+
+.certificates-list > span {
+  color: var(--color-primary-blue);
+}
+
+.certificates-short {
+  font-family: var(--default-font-regular);
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 @media screen and (min-width: 1750px) {
@@ -822,7 +952,7 @@
   }
   .dropdown-about,
   .dropdown-products {
-    top: 74.5px;
+    top: 71.5px;
   }
   .dropdown-search {
     right: 0.5%;
@@ -870,6 +1000,9 @@
   .banner > p > span {
     font-size: 28px;
     line-height: 38px;
+  }
+  .certificates > div > p {
+    font-size: 20px;
   }
 }
 
@@ -950,6 +1083,34 @@
     font-size: 24px;
     line-height: 28px;
   }
+  .vision h1 {
+    font-size: 52px;
+  }
+  .vision p {
+    font-size: 12.5px;
+    width: 55%;
+  }
+  .trailer h1 {
+    font-size: 56px;
+  }
+  .trailer p {
+    font-size: 28px;
+  }
+  .caption {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .quality-policy > p,
+  .quality-policy > ul > li,
+  .quality-policy div > div > p,
+  .quality-policy div > ul > li,
+  .quality-policy div > div > ul > li {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .certificates > div > p {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1015,6 +1176,48 @@
   .timeline p {
     width: 100%;
   }
+  .vision h1 {
+    text-align: center;
+    font-size: 52px;
+  }
+  .vision p {
+    text-align: center;
+    font-size: 12.5px;
+    width: 75%;
+  }
+  .trailer h1 {
+    font-size: 50px;
+    line-height: 36px;
+  }
+  .trailer p {
+    font-size: 22px;
+  }
+  .caption {
+    line-height: 46px;
+  }
+  .quality-policy > p,
+  .quality-policy > ul > li,
+  .quality-policy div > div > p,
+  .quality-policy div > ul > li,
+  .quality-policy div > div > ul > li {
+    line-height: 20px;
+  }
+  .certificates {
+    border-right: 0px;
+  }
+  .certificates > div > p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .trailer h1 {
+    font-size: 44px;
+    line-height: 30px;
+  }
+  .trailer p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1061,6 +1264,20 @@
   .banner > p > span {
     font-size: 20px;
     line-height: 20px;
+  }
+  .vision h1 {
+    font-size: 48px;
+  }
+  .vision p {
+    font-size: 12px;
+    width: 75%;
+  }
+  .trailer h1 {
+    font-size: 38px;
+    line-height: 20px;
+  }
+  .trailer p {
+    font-size: 14px;
   }
 }
 
@@ -1110,6 +1327,37 @@
   .banner > p > span {
     font-size: 17px;
     line-height: 17px;
+  }
+  .vision h1 {
+    font-size: 44px;
+  }
+  .vision p {
+    font-size: 11.5px;
+    width: 85%;
+  }
+  .trailer > div {
+    top: 47.5%;
+  }
+  .trailer h1 {
+    font-size: 30px;
+    line-height: 0px;
+  }
+  .trailer p {
+    font-size: 13px;
+  }
+  .caption {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .quality-policy > p,
+  .quality-policy > ul > li,
+  .quality-policy div > div > p,
+  .quality-policy div > ul > li,
+  .quality-policy div > div > ul > li {
+    font-size: 12.5px;
+  }
+  .certificates > div > p {
+    font-size: 16px;
   }
 }
 
@@ -1191,6 +1439,31 @@
     font-size: 15px;
     line-height: 14px;
   }
+  .vision h1 {
+    font-size: 40px;
+  }
+  .vision p {
+    font-size: 11px;
+    width: 100%;
+  }
+  .trailer h1 {
+    font-size: 24px;
+  }
+  .trailer p {
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .caption {
+    font-size: 28px;
+  }
+  .quality-policy > p,
+  .quality-policy > ul > li,
+  .quality-policy div > div > p,
+  .quality-policy div > ul > li,
+  .quality-policy div > div > ul > li {
+    font-size: 12px;
+    text-align: inherit;
+  }
 }
 
 @media screen and (max-width: 330px) {
@@ -1244,6 +1517,19 @@
     font-size: 12px;
     line-height: 10px;
   }
+  .vision h1 {
+    font-size: 36px;
+  }
+  .vision p {
+    font-size: 10.5px;
+  }
+  .trailer h1 {
+    font-size: 20px;
+  }
+  .trailer p {
+    line-height: 26px;
+    font-size: 11.5px;
+  }
 }
 
 @media screen and (max-width: 260px) {
@@ -1271,5 +1557,18 @@
     left: 4%;
     font-size: 7px;
     padding: 2px 6px;
+  }
+  .vision h1 {
+    font-size: 32.5px;
+  }
+  .vision p {
+    font-size: 10px;
+  }
+  .trailer h1 {
+    font-size: 16px;
+  }
+  .trailer p {
+    line-height: 20px;
+    font-size: 10px;
   }
 }
