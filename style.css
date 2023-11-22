@@ -906,12 +906,184 @@
   color: var(--color-primary-blue);
 }
 
-.certificates-short {
+.certificates-short > p {
   font-family: var(--default-font-regular);
   color: #000;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
+}
+
+.certificates-conditions > div > h1 {
+  font-family: var(--default-font-demi-bold);
+  color: var(--color-primary-blue);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.certificates-conditions > div > p {
+  font-family: var(--default-font-regular);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.certificates-conditions > div > ul > li {
+  font-family: var(--default-font-regular);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* Fields */
+
+.fields > div > div:nth-child(odd) {
+  justify-content: start;
+  border-right: 1px solid var(--color-dark-grey);
+}
+.fields > div > div:nth-child(even) {
+  justify-content: space-between;
+}
+.fields > div > div {
+  border-bottom: 1px solid var(--color-dark-grey);
+}
+.fields > div > div:last-child {
+  border: none;
+}
+
+.fields > p {
+  font-family: var(--default-font-regular);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.fields > p > span {
+  font-family: var(--default-font-medium);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.fields > div > div > img {
+  border-radius: 8px;
+}
+
+.fields > div > div > div > h1 {
+  font-family: var(--default-font-medium);
+  color: var(--color-primary-blue);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.fields > div > div > div > ul > li {
+  font-family: var(--default-font-regular);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Product Detail */
+
+.product-detail-list {
+  border-right: 1px solid var(--color-primary-blue);
+}
+
+.product-detail-list > ul > li:hover {
+  cursor: pointer;
+}
+
+.product-detail-list > ul > li > p {
+  font-family: var(--default-font-regular);
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.product-detail-list > ul > li > span {
+  color: #000;
+  font-size: 17px;
+}
+
+.product-detail-form > p {
+  font-family: var(--default-font-regular);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.product-detail-form > div > h1 {
+  font-family: var(--default-font-medium);
+  color: var(--color-primary-blue);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.59px;
+}
+
+.product-detail-form > div > button {
+  font-family: var(--default-font-regular);
+  background-color: var(--color-dark);
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.12px;
+  transition: 0.1s;
+}
+
+.product-detail-form > div > button > span {
+  font-size: 19px;
+}
+
+.product-detail-form > div > button:hover {
+  background-color: var(--color-light-brown);
+}
+
+/* Catalog */
+
+.catalog {
+  background-color: var(--color-primary-blue);
+  height: 355px;
+}
+
+.catalog > div > img {
+  width: 50%;
+}
+
+.catalog > div > h1 {
+  font-family: var(--default-font-medium);
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: end;
+}
+
+.catalog > div > button {
+  font-family: var(--default-font-regular);
+  color: var(--color-primary-blue);
+  background: var(--color-dark);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  padding: 18px 60px;
+  border-radius: 60px;
+  border: none;
+  transition: 0.1s;
+}
+
+.catalog > div > button:hover {
+  background-color: var(--color-brown);
 }
 
 @media screen and (min-width: 1750px) {
@@ -930,6 +1102,18 @@
   .carousel {
     max-height: 800px;
   }
+  .catalog {
+    height: 275px;
+  }
+  .catalog > div > h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .catalog > div > button {
+    font-size: 15px;
+    padding: 16px 56px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -943,6 +1127,18 @@
   .slider-header h1 {
     font-size: 44px;
     line-height: 54px;
+  }
+  .catalog {
+    height: 250px;
+  }
+  .catalog > div > h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .catalog > div > button {
+    font-size: 14.5px;
+    padding: 14px 52px;
   }
 }
 
@@ -1003,6 +1199,35 @@
   }
   .certificates > div > p {
     font-size: 20px;
+  }
+  .fields > div > div > div > h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .fields > div > div > div > ul > li {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .product-detail-list > ul > li > span {
+    font-size: 15px;
+  }
+  .product-detail-form > div > button {
+    padding: 16px;
+    font-size: 12px;
+  }
+  .product-detail-form > div > button > span {
+    font-size: 17px;
+  }
+  .catalog {
+    height: 210px;
+  }
+  .catalog > div > h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .catalog > div > button {
+    font-size: 12.5px;
+    padding: 12px 44px;
   }
 }
 
@@ -1104,12 +1329,52 @@
   .quality-policy > ul > li,
   .quality-policy div > div > p,
   .quality-policy div > ul > li,
-  .quality-policy div > div > ul > li {
+  .quality-policy div > div > ul > li,
+  .certificates-short > p,
+  .certificates-conditions > div > p,
+  .certificates-conditions > div > ul > li {
     font-size: 13px;
     line-height: 20px;
   }
   .certificates > div > p {
     font-size: 17px;
+  }
+  .certificates-list > p {
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .product-detail-list > ul > li > span {
+    font-size: 14px;
+  }
+  .product-detail-list > ul > li > p {
+    font-size: 12.5px;
+    line-height: 21px;
+  }
+  .product-detail-form > p {
+    font-size: 12.5px;
+    line-height: 17.5px;
+  }
+  .product-detail-form > div > h1 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .product-detail-form > div > button {
+    padding: 16px;
+    font-size: 13px;
+  }
+  .product-detail-form > div > button > span {
+    font-size: 17px;
+  }
+  .catalog {
+    height: 175px;
+  }
+  .catalog > div > h1 {
+    font-size: 18.5px;
+    line-height: 25px;
+  }
+  .catalog > div > button {
+    font-size: 11.5px;
+    padding: 10px 36px;
   }
 }
 
@@ -1199,7 +1464,10 @@
   .quality-policy > ul > li,
   .quality-policy div > div > p,
   .quality-policy div > ul > li,
-  .quality-policy div > div > ul > li {
+  .quality-policy div > div > ul > li,
+  .certificates-short > p,
+  .certificates-conditions > div > p,
+  .certificates-conditions > div > ul > li {
     line-height: 20px;
   }
   .certificates {
@@ -1207,6 +1475,37 @@
   }
   .certificates > div > p {
     font-size: 20px;
+  }
+  .certificates-conditions > div > h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .fields > div > div:nth-child(odd) {
+    border-right: none;
+  }
+  .product-detail-list > ul > li > span {
+    font-size: 17px;
+  }
+  .product-detail-list > ul > li > p {
+    font-size: 14px;
+  }
+  .product-detail-list {
+    border-right: none;
+    border-bottom: 1px solid var(--color-primary-blue);
+  }
+  .catalog {
+    height: 150px;
+  }
+  .catalog > div > img {
+    width: 75%;
+  }
+  .catalog > div > h1 {
+    font-size: 15.5px;
+    line-height: 22px;
+  }
+  .catalog > div > button {
+    font-size: 10px;
+    padding: 8px 28px;
   }
 }
 
@@ -1278,6 +1577,18 @@
   }
   .trailer p {
     font-size: 14px;
+  }
+  .certificates-conditions > div > h1 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .catalog > div > h1 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .catalog > div > button {
+    font-size: 9.5px;
+    padding: 8px 24px;
   }
 }
 
@@ -1353,11 +1664,41 @@
   .quality-policy > ul > li,
   .quality-policy div > div > p,
   .quality-policy div > ul > li,
-  .quality-policy div > div > ul > li {
+  .quality-policy div > div > ul > li,
+  .certificates-short > p,
+  .certificates-conditions > div > p,
+  .certificates-conditions > div > ul > li {
     font-size: 12.5px;
   }
   .certificates > div > p {
     font-size: 16px;
+  }
+  .certificates-conditions > div > h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .product-detail-list > ul > li > span {
+    font-size: 15px;
+  }
+  .product-detail-list > ul > li > p {
+    font-size: 13px;
+  }
+  .product-detail-form > p {
+    font-size: 11.5px;
+  }
+  .product-detail-form > div > h1 {
+    font-size: 16px;
+  }
+  .catalog {
+    height: 130px;
+  }
+  .catalog > div > h1 {
+    font-size: 11.5px;
+    line-height: 17px;
+  }
+  .catalog > div > button {
+    font-size: 8.5px;
+    padding: 6px 17px;
   }
 }
 
@@ -1460,9 +1801,42 @@
   .quality-policy > ul > li,
   .quality-policy div > div > p,
   .quality-policy div > ul > li,
-  .quality-policy div > div > ul > li {
+  .quality-policy div > div > ul > li,
+  .certificates-short > p,
+  .certificates-conditions > div > p,
+  .certificates-conditions > div > ul > li {
     font-size: 12px;
     text-align: inherit;
+  }
+  .product-detail-list > ul > li > span {
+    font-size: 13px;
+  }
+  .product-detail-list > ul > li > p {
+    font-size: 11.5px;
+  }
+  .product-detail-form > p {
+    font-size: 10.5px;
+  }
+  .product-detail-form > div > h1 {
+    font-size: 15px;
+  }
+  .product-detail-form > div > button {
+    padding: 14px;
+    font-size: 11.5px;
+  }
+  .product-detail-form > div > button > span {
+    font-size: 15px;
+  }
+  .catalog {
+    height: 110px;
+  }
+  .catalog > div > h1 {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .catalog > div > button {
+    font-size: 8px;
+    padding: 5px 15px;
   }
 }
 
@@ -1530,6 +1904,34 @@
     line-height: 26px;
     font-size: 11.5px;
   }
+  .caption {
+    font-size: 25px;
+  }
+  .certificates-list > p {
+    font-size: 11.5px;
+  }
+  .certificates-conditions > div > h1 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .product-detail-form > div > button {
+    padding: 12px;
+    font-size: 10.5px;
+  }
+  .product-detail-form > div > button > span {
+    font-size: 13px;
+  }
+  .catalog {
+    height: 100px;
+  }
+  .catalog > div > h1 {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .catalog > div > button {
+    font-size: 7.5px;
+    padding: 4px 12px;
+  }
 }
 
 @media screen and (max-width: 260px) {
@@ -1570,5 +1972,16 @@
   .trailer p {
     line-height: 20px;
     font-size: 10px;
+  }
+  .catalog {
+    height: 80px;
+  }
+  .catalog > div > h1 {
+    font-size: 7.5px;
+    line-height: 10px;
+  }
+  .catalog > div > button {
+    font-size: 6px;
+    padding: 3px 8px;
   }
 }
