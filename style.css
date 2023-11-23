@@ -1009,7 +1009,7 @@
 }
 .product-detail-list > ul > li > span {
   color: #000;
-  font-size: 17px;
+  font-size: 12px;
 }
 
 .product-detail-form > p {
@@ -1194,14 +1194,30 @@
   max-width: 675px;
 }
 
-.modal-dialog-centered {
-  margin: auto;
-}
-
 .modal-content {
   background-color: var(--color-dark);
   border-radius: 8px;
   padding: 40px;
+}
+
+.modal-content > span {
+  background-color: var(--color-brown);
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  border-radius: 100%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  z-index: 1;
+}
+
+.modal-content > span:hover {
+  background-color: var(--color-light-brown);
 }
 
 .modal-body > hr {
@@ -1393,7 +1409,7 @@
     line-height: 20px;
   }
   .product-detail-list > ul > li > span {
-    font-size: 15px;
+    font-size: 11px;
   }
   .product-detail-form > div > button {
     padding: 16px;
@@ -1418,6 +1434,13 @@
   }
   .modal-content {
     padding: 20px;
+  }
+  .modal-content > span {
+    width: 46px;
+    height: 46px;
+    font-size: 24px;
+    top: 20px;
+    left: 20px;
   }
 }
 
@@ -1536,7 +1559,7 @@
     line-height: 28px;
   }
   .product-detail-list > ul > li > span {
-    font-size: 14px;
+    font-size: 10px;
   }
   .product-detail-list > ul > li > p {
     font-size: 12.5px;
@@ -1607,6 +1630,11 @@
   .modal-body > div > div > button {
     padding: 12px 58px 12px 58px;
     font-size: 14px;
+  }
+  .modal-content > span {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 }
 
@@ -1718,7 +1746,7 @@
     border-right: none;
   }
   .product-detail-list > ul > li > span {
-    font-size: 17px;
+    font-size: 12px;
   }
   .product-detail-list > ul > li > p {
     font-size: 14px;
@@ -1828,6 +1856,9 @@
     font-size: 9.5px;
     padding: 8px 24px;
   }
+  .modal-dialog-centered {
+    margin: auto;
+  }
   .modal-dialog {
     max-width: 450px;
   }
@@ -1855,6 +1886,11 @@
   .modal-body > hr {
     width: 65%;
     margin: 12.5px auto;
+  }
+  .modal-content > span {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
   }
 }
 
@@ -1946,7 +1982,7 @@
     line-height: 22px;
   }
   .product-detail-list > ul > li > span {
-    font-size: 15px;
+    font-size: 11px;
   }
   .product-detail-list > ul > li > p {
     font-size: 13px;
@@ -2011,6 +2047,11 @@
   .modal-body > hr {
     width: 60%;
     margin: 0px auto;
+  }
+  .modal-content > span {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
   }
 }
 
@@ -2123,7 +2164,7 @@
     text-align: inherit;
   }
   .product-detail-list > ul > li > span {
-    font-size: 13px;
+    font-size: 10px;
   }
   .product-detail-list > ul > li > p {
     font-size: 11.5px;
@@ -2187,6 +2228,11 @@
   .modal-body > div > div > button {
     padding: 7px 26px;
     font-size: 10.5px;
+  }
+  .modal-content > span {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
   }
 }
 
