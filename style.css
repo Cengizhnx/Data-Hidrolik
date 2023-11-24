@@ -1276,6 +1276,152 @@
   color: #fff;
 }
 
+/* Faq */
+
+.faq {
+  background-color: var(--color-grey);
+}
+
+.faq > div > h1,
+.faq-help > div > h1 {
+  font-family: var(--default-font-medium);
+  color: var(--color-primary-blue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: center;
+}
+
+.faq > div > p,
+.faq-help > div > p {
+  text-align: center;
+}
+
+.faq > div > p,
+.faq-help > div > p,
+.faq-list-row > div > h1 {
+  color: var(--color-dark);
+  font-family: var(--default-font-medium);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.faq-list {
+  background-color: #fff;
+}
+
+.faq-list-row {
+  border-bottom: 0.5px solid var(--color-dark);
+}
+
+.faq-list-row > div > p {
+  color: var(--color-dark);
+  font-family: var(--default-font-regular);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.faq-list-button {
+  background-color: var(--color-secondary);
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--default-font-medium);
+  font-size: 10px;
+  border-radius: 100%;
+  color: #000;
+}
+
+.faq-list-button:hover {
+  background-color: var(--color-dark-grey);
+}
+
+.faq-help > div > input,
+.faq-help > div > select,
+.faq-help > div > textarea,
+.faq-help > div > div > input {
+  font-family: var(--default-font-regular);
+  background-color: #fff;
+  color: var(--color-dark);
+  border: 1px solid #848fa4;
+  border-radius: 8px;
+  font-weight: 400;
+  padding: 16px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 19.12px;
+}
+
+.faq-help > div > textarea {
+  resize: none;
+}
+
+.faq-help > div > button {
+  margin: auto;
+  font-family: var(--default-font-medium);
+  background: var(--color-primary-blue);
+  color: #fff;
+  border: none;
+  border-radius: 82px;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.12px;
+  transition: 0.5s;
+}
+
+.faq-help > div > button:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.faq-banner {
+  position: relative;
+}
+
+.faq-banner > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-banner > div > h1 {
+  font-family: var(--default-font-demi-bold);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.faq-banner > div > button {
+  font-family: var(--default-font-medium);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.12px;
+  padding: 10px 35px;
+  border-radius: 61px;
+  border: 1px solid var(--color-dark);
+  background: transparent;
+  transition: 0.5s;
+}
+
+.faq-banner > div > p {
+  font-family: var(--default-font-regular);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 1750px) {
   .carousel {
     max-height: 1100px;
@@ -1441,6 +1587,18 @@
     font-size: 24px;
     top: 20px;
     left: 20px;
+  }
+  .faq-banner > div > h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .faq-banner > div > button {
+    font-size: 12px;
+    padding: 8px 32px;
+  }
+  .faq-banner > div > p {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
@@ -1636,6 +1794,16 @@
     height: 40px;
     font-size: 18px;
   }
+  .faq-banner > div > h1 {
+    font-size: 18px;
+  }
+  .faq-banner > div > button {
+    font-size: 11px;
+    padding: 7px 28px;
+  }
+  .faq-banner > div > p {
+    font-size: 11px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1773,6 +1941,16 @@
     width: 75%;
     margin: 17.5px auto;
   }
+  .faq-banner > div > h1 {
+    font-size: 16px;
+  }
+  .faq-banner > div > button {
+    font-size: 10px;
+    padding: 5px 22px;
+  }
+  .faq-banner > div > p {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -1891,6 +2069,47 @@
     width: 36px;
     height: 36px;
     font-size: 14px;
+  }
+  .faq > div > h1,
+  .faq-help > div > h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .faq > div > p,
+  .faq-help > div > p,
+  .faq-list-row > div > h1 {
+    font-size: 13px;
+    line-height: 17.5px;
+  }
+  .faq-help > div > input,
+  .faq-help > div > select,
+  .faq-help > div > textarea,
+  .faq-help > div > div > input {
+    padding: 13.5px;
+    font-size: 12.5px;
+    line-height: 15px;
+    width: 75%;
+    margin: auto;
+  }
+  .faq-list-button {
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+  }
+  .faq-help > div > button {
+    padding: 14px 34px;
+    font-size: 14px;
+  }
+  .faq-banner > div > h1 {
+    font-size: 13px;
+  }
+  .faq-banner > div > button {
+    font-size: 8px;
+    padding: 3px 14px;
+  }
+  .faq-banner > div > p {
+    font-size: 8px;
   }
 }
 
@@ -2052,6 +2271,49 @@
     width: 32px;
     height: 32px;
     font-size: 12px;
+  }
+  .faq > div > h1,
+  .faq-help > div > h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .faq > div > p,
+  .faq-help > div > p,
+  .faq-list-row > div > h1 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .faq-list-row > div > p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .faq-help > div > input,
+  .faq-help > div > select,
+  .faq-help > div > textarea,
+  .faq-help > div > div > input {
+    padding: 11px;
+    font-size: 11px;
+    line-height: 12.5px;
+  }
+  .faq-list-button {
+    width: 13px;
+    height: 13px;
+    font-size: 7.5px;
+  }
+  .faq-help > div > button {
+    padding: 12px 28px;
+    font-size: 12.5px;
+  }
+  .faq-banner > div > h1 {
+    font-size: 9.5px;
+  }
+  .faq-banner > div > button {
+    font-size: 6px;
+    padding: 1px 8px;
+  }
+  .faq-banner > div > p {
+    font-size: 6px;
   }
 }
 
@@ -2234,6 +2496,48 @@
     height: 28px;
     font-size: 11px;
   }
+  .faq > div > h1,
+  .faq-help > div > h1 {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .faq > div > p,
+  .faq-help > div > p,
+  .faq-list-row > div > h1 {
+    font-size: 10.5px;
+    line-height: 12.5px;
+  }
+  .faq-list-row > div > p {
+    font-size: 10px;
+    line-height: 11.5px;
+  }
+  .faq-help > div > input,
+  .faq-help > div > select,
+  .faq-help > div > textarea,
+  .faq-help > div > div > input {
+    padding: 10px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .faq-list-button {
+    width: 11px;
+    height: 11px;
+    font-size: 7px;
+  }
+  .faq-help > div > button {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+  .faq-banner > div > h1 {
+    font-size: 8px;
+  }
+  .faq-banner > div > button {
+    font-size: 5px;
+    padding: 0.5px 6px;
+  }
+  .faq-banner > div > p {
+    font-size: 5px;
+  }
 }
 
 @media screen and (max-width: 330px) {
@@ -2366,6 +2670,20 @@
   }
   .modal-body > hr {
     width: 50%;
+  }
+  .faq-help > div > button {
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+  .faq-banner > div > h1 {
+    font-size: 7px;
+  }
+  .faq-banner > div > button {
+    font-size: 4px;
+    padding: 0.5px 4px;
+  }
+  .faq-banner > div > p {
+    font-size: 4px;
   }
 }
 
