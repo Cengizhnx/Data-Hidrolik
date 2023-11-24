@@ -625,7 +625,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
-  text-align: justify;
+  text-align: left;
 }
 
 .footer hr {
@@ -680,7 +680,6 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: 0em;
 }
 
 .bottom-bar div > a:hover {
@@ -1735,6 +1734,33 @@
     font-size: 24px;
     line-height: 28px;
   }
+  .footer > div > div > p {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+  }
+  .footer > div > div > h1 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .footer > div > div > a {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+  }
+  .footer > div > div > input {
+    padding: 12px;
+    font-size: 11px;
+  }
+  .footer hr {
+    width: 75%;
+  }
+  .bottom-bar div > a {
+    font-size: 10px;
+  }
+  .bottom-bar div > p {
+    font-size: 11px;
+  }
   .vision h1 {
     font-size: 52px;
   }
@@ -1877,6 +1903,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .top-bar > div > span {
+    font-size: 12px;
+  }
   .dropdown-search,
   .dropdown-lang,
   .dropdown-about,
@@ -2089,6 +2118,10 @@
   .banner > p > span {
     font-size: 20px;
     line-height: 20px;
+  }
+  .footer > div > div > input {
+    padding: 9.5px;
+    font-size: 10px;
   }
   .vision h1 {
     font-size: 48px;
@@ -2502,6 +2535,16 @@
     font-size: 15px;
     line-height: 14px;
   }
+  .footer > div > div > h1 {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .bottom-bar div > a {
+    font-size: 9.5px;
+  }
+  .bottom-bar div > p {
+    font-size: 10px;
+  }
   .vision h1 {
     font-size: 40px;
   }
@@ -2709,6 +2752,28 @@
   .banner > p > span {
     font-size: 12px;
     line-height: 10px;
+  }
+  .footer > div > div > p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .footer > div > div > h1 {
+    font-size: 10px;
+    line-height: 11px;
+  }
+  .footer > div > div > a {
+    font-size: 9.5px;
+    line-height: 11px;
+  }
+  .footer > div > div > input {
+    padding: 8.5px;
+    font-size: 9px;
+  }
+  .bottom-bar div > a {
+    font-size: 9px;
+  }
+  .bottom-bar div > p {
+    font-size: 9.5px;
   }
   .vision h1 {
     font-size: 36px;
