@@ -251,7 +251,7 @@
   border-radius: 10px;
 }
 
-.slider-header h1 {
+.slider-header div {
   color: #fff;
   font-family: var(--default-font-medium);
   font-size: 48px;
@@ -318,7 +318,7 @@
 
 /* Products */
 
-.products h1 {
+.products div {
   color: var(--color-primary-blue);
   font-family: var(--default-font-medium);
   font-size: 36px;
@@ -399,7 +399,7 @@
   background-color: var(--color-grey);
 }
 
-.sales-service h1 {
+.sales-service > div > div {
   font-family: var(--default-font-demi-bold);
   color: var(--color-primary-blue);
   font-size: 24px;
@@ -510,7 +510,7 @@
 
 /* Blog */
 
-.blog h1 {
+.blog div {
   color: var(--color-primary-blue);
   font-family: var(--default-font-regular);
   font-size: 36px;
@@ -547,7 +547,7 @@
   text-align: left;
 }
 
-.blog-post h1 {
+.blog-post div {
   color: #000;
   font-family: var(--default-font-medium);
   font-size: 28px;
@@ -597,7 +597,7 @@
 
 /* Video */
 
-.video h1 {
+.video div {
   font-family: var(--default-font-medium);
   color: var(--color-primary-blue);
   font-size: 40px;
@@ -633,7 +633,7 @@
   border: 1px solid #6f6f6f;
 }
 
-.footer > div > div > h1 {
+.footer > div > div > div {
   color: #fff;
   font-family: var(--default-font-regular);
   font-size: 14px;
@@ -724,7 +724,7 @@
   width: 100%;
 }
 
-.timeline h1 {
+.timeline div {
   font-family: var(--default-font-medium);
   color: var(--color-dark);
   font-size: 36px;
@@ -794,7 +794,8 @@
   background-color: var(--color-dark-grey);
 }
 
-.vision h1 {
+.vision h1,
+.vision div div {
   font-family: var(--default-font-medium);
   color: var(--color-primary-blue);
   font-size: 64px;
@@ -825,7 +826,7 @@
   transform: translate(-50%, -50%);
 }
 
-.trailer h1 {
+.trailer div {
   color: #fff;
   font-family: var(--default-font-medium);
   font-size: 64px;
@@ -865,7 +866,7 @@
   border-bottom: 1px solid var(--color-primary-blue);
 }
 
-.opened-div > div > h1 {
+.opened-div > div > div {
   font-family: var(--default-font-medium);
   color: #000;
   margin: 0;
@@ -921,7 +922,7 @@
   line-height: 19px;
 }
 
-.certificates-conditions > div > h1 {
+.certificates-conditions > div > div {
   font-family: var(--default-font-demi-bold);
   color: var(--color-primary-blue);
   font-size: 24px;
@@ -981,7 +982,7 @@
   border-radius: 8px;
 }
 
-.fields > div > div > div > h1 {
+.fields > div > div > div > div {
   font-family: var(--default-font-medium);
   color: var(--color-primary-blue);
   font-size: 28px;
@@ -1027,7 +1028,7 @@
   line-height: 19px;
 }
 
-.product-detail-form > div > h1 {
+.product-detail-form > div > div {
   font-family: var(--default-font-medium);
   color: var(--color-primary-blue);
   font-size: 18px;
@@ -1067,7 +1068,7 @@
   width: 50%;
 }
 
-.catalog > div > h1 {
+.catalog > div > div {
   font-family: var(--default-font-medium);
   color: #fff;
   font-size: 36px;
@@ -1129,7 +1130,7 @@
   background-color: #d8e0ef;
 }
 
-.all-catalogs > div > h1 {
+.all-catalogs > div > div {
   font-family: var(--default-font-medium);
   font-size: 16px;
   font-weight: 600;
@@ -1180,7 +1181,7 @@
 .search-result:last-child {
   border-bottom: none;
 }
-.search-result > div > h1 {
+.search-result > div > div {
   font-family: var(--default-font-medium);
   color: #000;
   font-size: 18px;
@@ -1244,7 +1245,7 @@
   margin: 25px auto;
 }
 
-.modal-body > div > h1 {
+.modal-body > div > div {
   font-family: var(--default-font-medium);
   color: #fff;
   font-size: 36px;
@@ -1252,7 +1253,7 @@
   line-height: 49px;
   text-align: center;
 }
-.modal-body > div > div > h1 {
+.modal-body > div > div > div {
   font-family: var(--default-font-demi-bold);
   color: #fff;
   font-size: 24px;
@@ -1300,8 +1301,8 @@
   background-color: var(--color-grey);
 }
 
-.faq > div > h1,
-.faq-help > div > h1 {
+.faq > div > div,
+.faq-help > div > div {
   font-family: var(--default-font-medium);
   color: var(--color-primary-blue);
   font-size: 36px;
@@ -1317,7 +1318,7 @@
 
 .faq > div > p,
 .faq-help > div > p,
-.faq-list-row > div > h1 {
+.faq-list-row > div > div {
   color: var(--color-dark);
   font-family: var(--default-font-medium);
   font-size: 14px;
@@ -1339,6 +1340,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  text-align: start;
 }
 
 .faq-list-button {
@@ -1407,7 +1409,7 @@
   transform: translate(-50%, -50%);
 }
 
-.faq-banner > div > h1 {
+.faq-banner > div > div {
   font-family: var(--default-font-demi-bold);
   color: #fff;
   font-size: 24px;
@@ -1442,7 +1444,7 @@
 
 /* Contact */
 
-.contact > h1 {
+.contact > div {
   font-family: var(--default-font-demi-bold);
   color: var(--color-primary-blue);
   font-size: 24px;
@@ -1496,7 +1498,7 @@
   .catalog {
     height: 275px;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 32px;
     line-height: 42px;
   }
@@ -1515,14 +1517,14 @@
     top: 17.5%;
     left: 12.5%;
   }
-  .slider-header h1 {
+  .slider-header div {
     font-size: 44px;
     line-height: 54px;
   }
   .catalog {
     height: 250px;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 28px;
     line-height: 38px;
   }
@@ -1531,7 +1533,7 @@
     font-size: 14.5px;
     padding: 14px 52px;
   }
-  .search-result > div > h1,
+  .search-result > div > div,
   .search-result > div > p {
     width: 100%;
   }
@@ -1561,7 +1563,7 @@
   .about h1 {
     font-size: 56px;
   }
-  .video h1 {
+  .video div {
     font-size: 36px;
   }
   .service-title,
@@ -1572,7 +1574,7 @@
     top: 14%;
     left: 12.5%;
   }
-  .slider-header h1 {
+  .slider-header div {
     font-size: 32px;
     line-height: 42px;
   }
@@ -1601,7 +1603,7 @@
   .certificates > div > p {
     font-size: 20px;
   }
-  .fields > div > div > div > h1 {
+  .fields > div > div > div > div {
     font-size: 24px;
     line-height: 34px;
   }
@@ -1622,7 +1624,7 @@
   .catalog {
     height: 210px;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 24px;
     line-height: 32px;
   }
@@ -1643,7 +1645,7 @@
     top: 20px;
     left: 20px;
   }
-  .faq-banner > div > h1 {
+  .faq-banner > div > div {
     font-size: 20px;
     line-height: 28px;
   }
@@ -1679,7 +1681,7 @@
     line-height: 16.39px;
   }
 
-  .blog-post h1 {
+  .blog-post div {
     font-size: 24px;
     line-height: 32px;
   }
@@ -1691,13 +1693,13 @@
   .blog-post a {
     font-size: 13px;
   }
-  .video h1 {
+  .video div {
     font-size: 32px;
   }
   .sales-search > ul > li {
     font-size: 16px;
   }
-  .sales-service h1 {
+  .sales-service > div > div {
     font-size: 20px;
   }
   .slider-arrow {
@@ -1710,7 +1712,7 @@
   .slider-header {
     padding: 30px;
   }
-  .slider-header h1 {
+  .slider-header div {
     font-size: 28px;
     line-height: 38px;
     margin-bottom: 30px;
@@ -1739,7 +1741,7 @@
     line-height: 15px;
     text-align: left;
   }
-  .footer > div > div > h1 {
+  .footer > div > div > div {
     font-size: 12px;
     line-height: 15px;
   }
@@ -1761,14 +1763,15 @@
   .bottom-bar div > p {
     font-size: 11px;
   }
-  .vision h1 {
+  .vision h1,
+  .vision div div {
     font-size: 52px;
   }
   .vision p {
     font-size: 12.5px;
     width: 55%;
   }
-  .trailer h1 {
+  .trailer div {
     font-size: 56px;
   }
   .trailer p {
@@ -1809,7 +1812,7 @@
     font-size: 12.5px;
     line-height: 17.5px;
   }
-  .product-detail-form > div > h1 {
+  .product-detail-form > div > div {
     font-size: 17px;
     line-height: 22px;
   }
@@ -1823,7 +1826,7 @@
   .catalog {
     height: 175px;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 18.5px;
     line-height: 25px;
   }
@@ -1831,7 +1834,7 @@
     font-size: 11.5px;
     padding: 10px 36px;
   }
-  .all-catalogs > div > h1 {
+  .all-catalogs > div > div {
     font-size: 13.5px;
     line-height: 20px;
   }
@@ -1841,7 +1844,7 @@
     height: 20px;
     font-size: 9px;
   }
-  .search-result > div > h1 {
+  .search-result > div > div {
     font-size: 15px;
     line-height: 20px;
   }
@@ -1854,11 +1857,11 @@
   .modal-content {
     padding: 15px;
   }
-  .modal-body > div > h1 {
+  .modal-body > div > div {
     font-size: 30px;
     line-height: 40px;
   }
-  .modal-body > div > div > h1 {
+  .modal-body > div > div > div {
     font-size: 18px;
     line-height: 25px;
   }
@@ -1878,7 +1881,7 @@
     height: 40px;
     font-size: 18px;
   }
-  .faq-banner > div > h1 {
+  .faq-banner > div > div {
     font-size: 18px;
   }
   .faq-banner > div > button {
@@ -1926,7 +1929,7 @@
   .slider-header {
     padding: 25px;
   }
-  .slider-header h1 {
+  .slider-header div {
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 25px;
@@ -1968,7 +1971,8 @@
   .timeline p {
     width: 100%;
   }
-  .vision h1 {
+  .vision h1,
+  .vision div div {
     text-align: center;
     font-size: 52px;
   }
@@ -1977,7 +1981,7 @@
     font-size: 12.5px;
     width: 75%;
   }
-  .trailer h1 {
+  .trailer div {
     font-size: 50px;
     line-height: 36px;
   }
@@ -2005,7 +2009,7 @@
   .certificates > div > p {
     font-size: 20px;
   }
-  .certificates-conditions > div > h1 {
+  .certificates-conditions > div > div {
     font-size: 22px;
     line-height: 30px;
   }
@@ -2028,7 +2032,7 @@
   .catalog > div > img {
     width: 75%;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 15.5px;
     line-height: 22px;
   }
@@ -2040,7 +2044,7 @@
     width: 75%;
     margin: 17.5px auto;
   }
-  .faq-banner > div > h1 {
+  .faq-banner > div > div {
     font-size: 16px;
   }
   .faq-banner > div > button {
@@ -2050,7 +2054,7 @@
   .faq-banner > div > p {
     font-size: 10px;
   }
-  .contact > h1 {
+  .contact > div {
     font-size: 22px;
     line-height: 25px;
   }
@@ -2065,7 +2069,7 @@
 }
 
 @media screen and (max-width: 680px) {
-  .trailer h1 {
+  .trailer div {
     font-size: 44px;
     line-height: 30px;
   }
@@ -2075,14 +2079,14 @@
 }
 
 @media screen and (max-width: 576px) {
-  .video h1 {
+  .video div {
     font-size: 30px;
     line-height: 40px;
   }
   .sales-search > ul > li {
     font-size: 15px;
   }
-  .sales-service h1 {
+  .sales-service > div > div {
     font-size: 18.5px;
   }
   .slider-arrow {
@@ -2095,7 +2099,7 @@
   .slider-header {
     padding: 20px;
   }
-  .slider-header h1 {
+  .slider-header div {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
@@ -2123,25 +2127,26 @@
     padding: 9.5px;
     font-size: 10px;
   }
-  .vision h1 {
+  .vision h1,
+  .vision div div {
     font-size: 48px;
   }
   .vision p {
     font-size: 12px;
     width: 75%;
   }
-  .trailer h1 {
+  .trailer div {
     font-size: 38px;
     line-height: 20px;
   }
   .trailer p {
     font-size: 14px;
   }
-  .certificates-conditions > div > h1 {
+  .certificates-conditions > div > div {
     font-size: 21px;
     line-height: 26px;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 13px;
     line-height: 20px;
   }
@@ -2158,11 +2163,11 @@
   .modal-content {
     padding: 10px;
   }
-  .modal-body > div > h1 {
+  .modal-body > div > div {
     font-size: 26px;
     line-height: 35px;
   }
-  .modal-body > div > div > h1 {
+  .modal-body > div > div > div {
     font-size: 16px;
     line-height: 22px;
   }
@@ -2185,15 +2190,15 @@
     height: 36px;
     font-size: 14px;
   }
-  .faq > div > h1,
-  .faq-help > div > h1 {
+  .faq > div > div,
+  .faq-help > div > div {
     font-size: 30px;
     line-height: 40px;
   }
 
   .faq > div > p,
   .faq-help > div > p,
-  .faq-list-row > div > h1 {
+  .faq-list-row > div > div {
     font-size: 13px;
     line-height: 17.5px;
   }
@@ -2216,7 +2221,7 @@
     padding: 14px 34px;
     font-size: 14px;
   }
-  .faq-banner > div > h1 {
+  .faq-banner > div > div {
     font-size: 13px;
   }
   .faq-banner > div > button {
@@ -2226,7 +2231,7 @@
   .faq-banner > div > p {
     font-size: 8px;
   }
-  .contact > h1 {
+  .contact > div {
     font-size: 20px;
     line-height: 20px;
   }
@@ -2248,15 +2253,15 @@
     font-size: 13px;
     padding: 12px 52px 12px 52px;
   }
-  .blog h1,
-  .products h1 {
+  .blog div,
+  .products div {
     font-size: 32px;
   }
   .button-black {
     font-size: 13px;
     padding: 8px 26px 8px 26px;
   }
-  .video h1 {
+  .video div {
     font-size: 28px;
   }
   .slider-arrow {
@@ -2269,7 +2274,7 @@
   .slider-header {
     padding: 15px;
   }
-  .slider-header h1 {
+  .slider-header div {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 14px;
@@ -2287,7 +2292,8 @@
     font-size: 17px;
     line-height: 17px;
   }
-  .vision h1 {
+  .vision h1,
+  .vision div div {
     font-size: 44px;
   }
   .vision p {
@@ -2297,7 +2303,7 @@
   .trailer > div {
     top: 47.5%;
   }
-  .trailer h1 {
+  .trailer div {
     font-size: 30px;
     line-height: 0px;
   }
@@ -2323,7 +2329,7 @@
   .certificates > div > p {
     font-size: 16px;
   }
-  .certificates-conditions > div > h1 {
+  .certificates-conditions > div > div {
     font-size: 20px;
     line-height: 22px;
   }
@@ -2336,13 +2342,13 @@
   .product-detail-form > p {
     font-size: 11.5px;
   }
-  .product-detail-form > div > h1 {
+  .product-detail-form > div > div {
     font-size: 16px;
   }
   .catalog {
     height: 130px;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 11.5px;
     line-height: 17px;
   }
@@ -2350,7 +2356,7 @@
     font-size: 8.5px;
     padding: 6px 17px;
   }
-  .all-catalogs > div > h1 {
+  .all-catalogs > div > div {
     font-size: 12.5px;
     line-height: 16px;
   }
@@ -2364,7 +2370,7 @@
     font-size: 22px;
     line-height: 30px;
   }
-  .search-result > div > h1 {
+  .search-result > div > div {
     font-size: 13.5px;
     line-height: 16px;
   }
@@ -2374,11 +2380,11 @@
   .modal-content {
     padding: 5px;
   }
-  .modal-body > div > h1 {
+  .modal-body > div > div {
     font-size: 20px;
     line-height: 30px;
   }
-  .modal-body > div > div > h1 {
+  .modal-body > div > div > div {
     font-size: 13px;
     line-height: 18px;
   }
@@ -2401,15 +2407,15 @@
     height: 32px;
     font-size: 12px;
   }
-  .faq > div > h1,
-  .faq-help > div > h1 {
+  .faq > div > div,
+  .faq-help > div > div {
     font-size: 24px;
     line-height: 30px;
   }
 
   .faq > div > p,
   .faq-help > div > p,
-  .faq-list-row > div > h1 {
+  .faq-list-row > div > div {
     font-size: 12px;
     line-height: 15px;
   }
@@ -2434,7 +2440,7 @@
     padding: 12px 28px;
     font-size: 12.5px;
   }
-  .faq-banner > div > h1 {
+  .faq-banner > div > div {
     font-size: 9.5px;
   }
   .faq-banner > div > button {
@@ -2444,7 +2450,7 @@
   .faq-banner > div > p {
     font-size: 6px;
   }
-  .contact > h1 {
+  .contact > div {
     font-size: 18px;
   }
   .contact > p {
@@ -2474,7 +2480,7 @@
   .blog-post span {
     font-size: 10.5px;
   }
-  .blog-post h1 {
+  .blog-post div {
     font-size: 22px;
     line-height: 28px;
   }
@@ -2484,8 +2490,8 @@
   .blog-post a {
     font-size: 12px;
   }
-  .blog h1,
-  .products h1 {
+  .blog div,
+  .products div {
     font-size: 28px;
   }
   .button-black {
@@ -2495,7 +2501,7 @@
   .sales-search > ul > li {
     font-size: 14px;
   }
-  .sales-service h1 {
+  .sales-service > div > div {
     font-size: 16.5px;
   }
   .slider-arrow {
@@ -2508,7 +2514,7 @@
   .slider-header {
     padding: 12.5px;
   }
-  .slider-header h1 {
+  .slider-header div {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 10px;
@@ -2535,7 +2541,7 @@
     font-size: 15px;
     line-height: 14px;
   }
-  .footer > div > div > h1 {
+  .footer > div > div > div {
     font-size: 11px;
     line-height: 12px;
   }
@@ -2545,14 +2551,15 @@
   .bottom-bar div > p {
     font-size: 10px;
   }
-  .vision h1 {
+  .vision h1,
+  .vision div div {
     font-size: 40px;
   }
   .vision p {
     font-size: 11px;
     width: 100%;
   }
-  .trailer h1 {
+  .trailer div {
     font-size: 24px;
   }
   .trailer p {
@@ -2584,7 +2591,7 @@
   .product-detail-form > p {
     font-size: 10.5px;
   }
-  .product-detail-form > div > h1 {
+  .product-detail-form > div > div {
     font-size: 15px;
   }
   .product-detail-form > div > button {
@@ -2597,7 +2604,7 @@
   .catalog {
     height: 110px;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 10px;
     line-height: 15px;
   }
@@ -2605,7 +2612,7 @@
     font-size: 8px;
     padding: 5px 15px;
   }
-  .all-catalogs > div > h1 {
+  .all-catalogs > div > div {
     font-size: 11px;
     line-height: 12.5px;
   }
@@ -2624,11 +2631,11 @@
   .modal-content {
     padding: 0px;
   }
-  .modal-body > div > h1 {
+  .modal-body > div > div {
     font-size: 16px;
     line-height: 24px;
   }
-  .modal-body > div > div > h1 {
+  .modal-body > div > div > div {
     font-size: 11.5px;
     line-height: 15px;
   }
@@ -2648,14 +2655,14 @@
     height: 28px;
     font-size: 11px;
   }
-  .faq > div > h1,
-  .faq-help > div > h1 {
+  .faq > div > div,
+  .faq-help > div > div {
     font-size: 21px;
     line-height: 25px;
   }
   .faq > div > p,
   .faq-help > div > p,
-  .faq-list-row > div > h1 {
+  .faq-list-row > div > div {
     font-size: 10.5px;
     line-height: 12.5px;
   }
@@ -2680,7 +2687,7 @@
     padding: 10px 20px;
     font-size: 11px;
   }
-  .faq-banner > div > h1 {
+  .faq-banner > div > div {
     font-size: 8px;
   }
   .faq-banner > div > button {
@@ -2690,7 +2697,7 @@
   .faq-banner > div > p {
     font-size: 5px;
   }
-  .contact > h1 {
+  .contact > div {
     font-size: 16px;
   }
   .contact > p {
@@ -2707,11 +2714,11 @@
     font-size: 28px;
     line-height: 40px;
   }
-  .blog h1,
-  .products h1 {
+  .blog div,
+  .products div {
     font-size: 26px;
   }
-  .video h1 {
+  .video div {
     font-size: 26px;
     line-height: 38px;
   }
@@ -2729,7 +2736,7 @@
   .slider-header {
     padding: 10px;
   }
-  .slider-header h1 {
+  .slider-header div {
     font-size: 10px;
     line-height: 16px;
     margin-bottom: 8px;
@@ -2757,7 +2764,7 @@
     font-size: 11px;
     line-height: 13px;
   }
-  .footer > div > div > h1 {
+  .footer > div > div > div {
     font-size: 10px;
     line-height: 11px;
   }
@@ -2775,13 +2782,14 @@
   .bottom-bar div > p {
     font-size: 9.5px;
   }
-  .vision h1 {
+  .vision h1,
+  .vision div div {
     font-size: 36px;
   }
   .vision p {
     font-size: 10.5px;
   }
-  .trailer h1 {
+  .trailer div {
     font-size: 20px;
   }
   .trailer p {
@@ -2796,7 +2804,7 @@
   .certificates-list > p {
     font-size: 11.5px;
   }
-  .certificates-conditions > div > h1 {
+  .certificates-conditions > div > div {
     font-size: 18px;
     line-height: 20px;
   }
@@ -2810,7 +2818,7 @@
   .catalog {
     height: 100px;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 9px;
     line-height: 12px;
   }
@@ -2818,7 +2826,7 @@
     font-size: 7.5px;
     padding: 4px 12px;
   }
-  .all-catalogs > div > h1 {
+  .all-catalogs > div > div {
     font-size: 10px;
     line-height: 12.5px;
   }
@@ -2836,11 +2844,11 @@
   .modal-dialog {
     max-width: 250px;
   }
-  .modal-body > div > h1 {
+  .modal-body > div > div {
     font-size: 11px;
     line-height: 20px;
   }
-  .modal-body > div > div > h1 {
+  .modal-body > div > div > div {
     font-size: 9.5px;
     line-height: 12px;
   }
@@ -2862,7 +2870,7 @@
     padding: 8px 16px;
     font-size: 10px;
   }
-  .faq-banner > div > h1 {
+  .faq-banner > div > div {
     font-size: 7px;
   }
   .faq-banner > div > button {
@@ -2872,7 +2880,7 @@
   .faq-banner > div > p {
     font-size: 4px;
   }
-  .contact > h1 {
+  .contact > div {
     font-size: 14px;
   }
   .contact > p {
@@ -2895,7 +2903,7 @@
   .slider-header {
     padding: 8px;
   }
-  .slider-header h1 {
+  .slider-header div {
     font-size: 8px;
     line-height: 12px;
     margin-bottom: 6px;
@@ -2910,13 +2918,14 @@
     font-size: 7px;
     padding: 2px 6px;
   }
-  .vision h1 {
+  .vision h1,
+  .vision div div {
     font-size: 32.5px;
   }
   .vision p {
     font-size: 10px;
   }
-  .trailer h1 {
+  .trailer div {
     font-size: 16px;
   }
   .trailer p {
@@ -2926,7 +2935,7 @@
   .catalog {
     height: 80px;
   }
-  .catalog > div > h1 {
+  .catalog > div > div {
     font-size: 7.5px;
     line-height: 10px;
   }
