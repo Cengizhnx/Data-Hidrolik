@@ -326,10 +326,10 @@
               >
                 <img
                   src="assets/img/dumen.webp"
-                  class="img-fluid"
+                  class="img-fluid col-12 col-md-6"
                   alt="Dümen"
                 />
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column col-12 col-md-6">
                   <div>1945</div>
                   <p>
                     DATA dümen sistemleri ve güverte makinalarının tasarım ve
@@ -344,10 +344,10 @@
               >
                 <img
                   src="assets/img/dumen.webp"
-                  class="img-fluid"
+                  class="img-fluid col-12 col-md-6"
                   alt="Dümen"
                 />
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column col-12 col-md-6">
                   <div>1948</div>
                   <p>
                     DATA dümen sistemleri ve güverte makinalarının tasarım ve
@@ -620,15 +620,16 @@
               let temp = li.getElementsByClassName("flow");
               console.log(temp);
               console.log(flow);
-              console.log(temp[0] !== flow);
-              if (temp[0] !== flow) {
-                li.classList.remove("selected");
-                flow.classList.remove("visible");
-                flow.classList.add("invisible");
-              } else {
+              console.log(temp[0] === flow);
+              if (temp[0] === flow) {
                 item.classList.add("selected");
                 flow.classList.remove("invisible");
                 flow.classList.add("visible");
+
+              } else {
+                li.classList.remove("selected");
+                flow.classList.remove("visible");
+                flow.classList.add("invisible");
               }
             });
           });
