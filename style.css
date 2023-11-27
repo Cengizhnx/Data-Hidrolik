@@ -2616,6 +2616,12 @@
     line-height: 30px;
     font-size: 12px;
   }
+  .fields > div > div:nth-child(odd) {
+    min-height:auto;
+  }
+  .fields > div > div:nth-child(even) {
+    min-height:auto;
+  }
   .fields > div > div > div > div {
     font-size: 17px;
   }
