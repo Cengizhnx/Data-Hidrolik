@@ -1432,6 +1432,11 @@
   transition: 0.5s;
 }
 
+.faq-banner > div > button:hover {
+  background-color: var(--color-light-brown);
+  color: #fff;
+}
+
 .faq-banner > div > p {
   font-family: var(--default-font-regular);
   color: #fff;
@@ -1987,6 +1992,10 @@
   }
   .trailer p {
     font-size: 22px;
+  }
+  .fields > div > div > div > div {
+    font-size: 20px;
+    line-height: 30px;
   }
   .caption,
   .caption-search,
@@ -2565,6 +2574,13 @@
   .trailer p {
     line-height: 30px;
     font-size: 12px;
+  }
+  .fields > div > div > div > div {
+    font-size: 17px;
+  }
+  .fields > div > div > div > ul > li {
+    font-size: 11px;
+    line-height: 16px;
   }
   .caption,
   .caption-search,
