@@ -224,17 +224,40 @@
   right: 11%;
 }
 
-.slider-arrow button {
+.video-slider-arrow {
+  position: absolute;
+  right: 3%;
+  top: 2%;
+}
+
+.video-slider-arrow > button > span {
+  text-shadow: 0 0 10px var(--color-dark);
+}
+
+.video-slider-title {
+  text-shadow: 0 0 10px var(--color-dark);
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  font-size: 28px;
+  font-family: var(--default-font-medium);
+  color: white;
+}
+
+.slider-arrow button,
+.video-slider-arrow button {
   border: none;
   background-color: transparent;
 }
 
-.slider-arrow button span {
+.slider-arrow button span,
+.video-slider-arrow button span {
   color: #fff;
   font-size: 52px;
 }
 
-.slider-arrow button:first-child span::before {
+.slider-arrow button:first-child span::before,
+.video-slider-arrow button:first-child span::before {
   -moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
   -o-transform: scale(-1, 1);
@@ -1543,7 +1566,6 @@
     font-size: 28px;
     line-height: 38px;
   }
-
   .catalog > div > button {
     font-size: 14.5px;
     padding: 14px 52px;
@@ -1584,6 +1606,11 @@
   .service-title,
   .service-text {
     font-size: 12.5px;
+  }
+  .video-slider-title {
+    top: 4%;
+    left: 3%;
+    font-size: 26px;
   }
   .slider-header {
     top: 14%;
@@ -1730,7 +1757,12 @@
     bottom: 4%;
     right: 8%;
   }
-  .slider-arrow button span {
+  .video-slider-title {
+    top: 5%;
+    font-size: 23px;
+  }
+  .slider-arrow button span,
+  .video-slider-arrow button span {
     font-size: 40px;
   }
   .slider-header {
@@ -1960,11 +1992,16 @@
     font-size: 14px;
     padding: 9px 28px 9px 28px;
   }
+  .video-slider-title {
+    top: 5%;
+    font-size: 18.5px;
+  }
   .slider-arrow {
     bottom: 3.5%;
     right: 7%;
   }
-  .slider-arrow button span {
+  .slider-arrow button span,
+  .video-slider-arrow button span {
     font-size: 32px;
   }
   .slider-header {
@@ -2130,11 +2167,15 @@
   .sales-service > div > div {
     font-size: 18.5px;
   }
+  .video-slider-title {
+    font-size: 16px;
+  }
   .slider-arrow {
     bottom: 3.5%;
     right: 5.5%;
   }
-  .slider-arrow button span {
+  .slider-arrow button span,
+  .video-slider-arrow button span {
     font-size: 26px;
   }
   .slider-header {
@@ -2305,11 +2346,15 @@
   .video div {
     font-size: 28px;
   }
+  .video-slider-title {
+    font-size: 14px;
+  }
   .slider-arrow {
     bottom: 3%;
     right: 5%;
   }
-  .slider-arrow button span {
+  .slider-arrow button span,
+  .video-slider-arrow button span {
     font-size: 20px;
   }
   .slider-header {
@@ -2556,11 +2601,16 @@
   .sales-service > div > div {
     font-size: 16.5px;
   }
+  .video-slider-title {
+    top: 4.5%;
+    font-size: 12px;
+  }
   .slider-arrow {
     bottom: 2.5%;
     right: 4%;
   }
-  .slider-arrow button span {
+  .slider-arrow button span,
+  .video-slider-arrow button span {
     font-size: 17.5px;
   }
   .slider-header {
@@ -2802,11 +2852,17 @@
   .service-text {
     font-size: 12px;
   }
+  .video-slider-title {
+    top: 5%;
+    left: 4%;
+    font-size: 10.5px;
+  }
   .slider-arrow {
     bottom: 3%;
     right: 3.5%;
   }
-  .slider-arrow button span {
+  .slider-arrow button span,
+  .video-slider-arrow button span {
     font-size: 15.5px;
   }
   .slider-header {
@@ -2980,7 +3036,8 @@
     bottom: 3%;
     right: 2.5%;
   }
-  .slider-arrow button span {
+  .slider-arrow button span,
+  .video-slider-arrow button span {
     font-size: 12.5px;
   }
   .slider-header {
