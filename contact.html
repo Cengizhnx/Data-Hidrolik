@@ -64,20 +64,42 @@
       <div
         class="container-md d-flex align-items-center justify-content-md-center px-md-5"
       >
-        <a class="navbar-brand" href="/"
-          ><img src="assets/img/data-hidrolik-logo.webp"
-        /></a>
-        <button
-          class="navbar-toggler border-0 p-1"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <div
+          class="navbar-wrap d-flex flex-row align-items-center justify-content-between"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <a class="navbar-brand order-1 order-md-0" id="dataLogo" href="/"
+            ><img src="assets/img/data-hidrolik-logo.webp"
+          /></a>
+          <button
+            class="navbar-toggler border-0 p-1 order-0 order-md-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="search d-block d-md-none order-2" id="searchIcon">
+            <i class="bi bi-search"></i>
+          </a>
+          <form
+            class="w-50 d-none d-md-none order-3"
+            role="search"
+            id="searchForm"
+          >
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Arama yapın..."
+              aria-label="Search"
+            />
+          </form>
+          <a class="close d-none d-md-none order-4" id="closeIcon">
+            <i class="bi bi-x"></i>
+          </a>
+        </div>
 
         <div
           class="collapse navbar-collapse justify-content-center"
@@ -133,12 +155,20 @@
                 <li>
                   <a class="dropdown-item" href="/history.html">Tarihçe</a>
                 </li>
-                <li><a class="dropdown-item" href="vision.html">Vizyon & Misyon</a></li>
                 <li>
-                  <a class="dropdown-item" href="quality-policy.html">Kalite Politikamız</a>
+                  <a class="dropdown-item" href="vision.html"
+                    >Vizyon & Misyon</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="after-selling.html">Satış Sonrası</a>
+                  <a class="dropdown-item" href="quality-policy.html"
+                    >Kalite Politikamız</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="after-selling.html"
+                    >Satış Sonrası</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="certificates.html">Kalite</a>
@@ -158,7 +188,9 @@
                   <div class="d-flex flex-column col-md-3 gap-2">
                     <h4>ÜRÜNLER</h4>
                     <div class="d-flex flex-column gap-3">
-                      <a href="products-detail.html">Zincir Irgatları & Manevra Irgatları</a>
+                      <a href="products-detail.html"
+                        >Zincir Irgatları & Manevra Irgatları</a
+                      >
                       <a href="products-detail.html">Dümen Sistemleri</a>
                       <a href="products-detail.html">Palamar Kancası</a>
                       <a href="products-detail.html">Palamar Tutucu</a>
@@ -197,18 +229,30 @@
                     >Zincir Irgatları & Manevra Irgatları</a
                   >
                 </li>
-                <li><a class="dropdown-item" href="products-detail.html">Dümen Sistemleri</a></li>
                 <li>
-                  <a class="dropdown-item" href="products-detail.html">Palamar Kancası</a>
+                  <a class="dropdown-item" href="products-detail.html"
+                    >Dümen Sistemleri</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="products-detail.html">Palamar Tutucu</a>
+                  <a class="dropdown-item" href="products-detail.html"
+                    >Palamar Kancası</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="products-detail.html">Vinçler</a>
+                  <a class="dropdown-item" href="products-detail.html"
+                    >Palamar Tutucu</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="products-detail.html">Özel Ürünler</a>
+                  <a class="dropdown-item" href="products-detail.html"
+                    >Vinçler</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="products-detail.html"
+                    >Özel Ürünler</a
+                  >
                 </li>
               </ul>
             </li>
@@ -227,14 +271,6 @@
           </ul>
           <!-- Mobile Search & Language -->
           <div class="d-flex flex-row justify-content-center gap-2 d-md-none">
-            <form class="w-50" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Arama yapın..."
-                aria-label="Search"
-              />
-            </form>
             <div class="dropdown">
               <button
                 class="btn dropdown-toggle"
@@ -261,59 +297,59 @@
       </div>
     </nav>
 
-        <!-- Banner -->
+    <!-- Banner -->
+    <section>
+      <div class="banner position-relative">
+        <!-- Dropdown Search -->
         <section>
-          <div class="position-relative">
-            <!-- Dropdown Search -->
-            <section>
-              <div class="dropdown-search col-md-4 col-lg-3 col-xl-2 p-4">
-                <div class="d-flex flex-column justify-content-center col-12 gap-3">
-                  <input
-                    type="email"
-                    id="searchInput"
-                    placeholder="Arama yapın..."
-                  />
-                  <h4 class="my-auto">Ürünler</h4>
-                  <div class="d-flex flex-column gap-3">
-                    <a href="">Zincir Irgatları & Manevra Irgatları</a>
-                    <a href="">Dümen Sistemleri</a>
-                    <a href="">Palamar Kancası</a>
-                    <a href="">Palamar Tutucu</a>
-                    <a href="">Vinçler</a>
-                    <a href="">Özel Ürünler</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-    
-            <!-- Dropdown Language -->
-            <section>
-              <div class="dropdown-lang col-md-4 col-lg-3 col-xl-2 p-4">
-                <div class="d-flex flex-column justify-content-center col-12 gap-3">
-                  <h4 class="my-auto">Dil Seçenekleri</h4>
-                  <div class="d-flex flex-column gap-3">
-                    <a href="">🇹🇷 Türkçe</a>
-                    <a href="">🇬🇧 İngilizce</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <div>
-              <img
-              class="img-fluid w-100"
-              src="assets/img/gemi-yan.webp"
-              alt="Gemi gemi-yan.webp"
+          <div class="dropdown-search col-md-4 col-lg-3 col-xl-2 p-4">
+            <div class="d-flex flex-column justify-content-center col-12 gap-3">
+              <input
+                type="email"
+                id="searchInput"
+                placeholder="Arama yapın..."
               />
+              <h4 class="my-auto">Ürünler</h4>
+              <div class="d-flex flex-column gap-3">
+                <a href="">Zincir Irgatları & Manevra Irgatları</a>
+                <a href="">Dümen Sistemleri</a>
+                <a href="">Palamar Kancası</a>
+                <a href="">Palamar Tutucu</a>
+                <a href="">Vinçler</a>
+                <a href="">Özel Ürünler</a>
+              </div>
             </div>
           </div>
         </section>
+
+        <!-- Dropdown Language -->
+        <section>
+          <div class="dropdown-lang col-md-4 col-lg-3 col-xl-2 p-4">
+            <div class="d-flex flex-column justify-content-center col-12 gap-3">
+              <h4 class="my-auto">Dil Seçenekleri</h4>
+              <div class="d-flex flex-column gap-3">
+                <a href="">🇹🇷 Türkçe</a>
+                <a href="">🇬🇧 İngilizce</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div>
+          <img
+            class="img-fluid w-100"
+            src="assets/img/gemi-yan.webp"
+            alt="Data hidrolik merkez"
+          />
+        </div>
+      </div>
+    </section>
     
 
     <!-- Contact -->
     <section>
       <div class="container">
         <div
-          class="d-flex flex-column align-items-start justify-content-center m-5"
+          class="d-flex flex-column align-items-start justify-content-center my-5 mx-2 m-md-5"
         >
           <h1 class="caption pb-3 pb-md-5">İletişim</h1>
           <div
@@ -332,7 +368,7 @@
 
     <!-- Technic Services -->
     <section>
-      <div class="container px-5">
+      <div class="container px-0 px-md-5">
         <div
           class="d-flex align-items-center justify-content-center mb-5 border border-1 rounded"
         >
@@ -454,7 +490,7 @@
 
     <!-- Sales Points -->   
     <section>
-      <div class="container px-5">
+      <div class="container px-0 px-md-5">
         <div
           class="d-flex align-items-center justify-content-center mb-5 border border-1 rounded"
         >
@@ -577,7 +613,7 @@
     <section>
       <div class="container">
         <div
-        class="faq-help d-flex flex-column align-items-center justify-content-center col-12 mb-5 p-2 p-md-5 rounded"
+        class="faq-help d-flex flex-column align-items-center justify-content-center col-12 mb-5 p-0 p-md-5 rounded"
       >
         <div class="d-flex flex-column col-12 align-items-center gap-4 p-4">
           <div>
@@ -604,29 +640,29 @@
       </div>
     </section>
 
-    <!-- Banner -->
-    <section>
+        <!-- Banner -->
+        <section>
           <div class="faq-banner mb-5">
             <img
               class="img-fluid w-100"
               src="assets/img/faq-banner.webp"
               alt="Gemi tepe"
             />
-            <div class="d-flex flex-column gap-0 gap-sm-1 gap-md-2 gap-lg-3 gap-xl-4 align-items-center">
+            <div class="w-100 d-flex flex-column gap-4 gap-lg-3 gap-xl-4 align-items-center">
               <div>Doğrudan bize e-posta gönderin!</div>
               <button onclick="location.href='mailto:data@datahidrolik.com';">data@datahidrolik.com</button>
               <p>Müşteri hizmetlerimiz en kısa sürede size geri dönüş yapacaktır.</p>
             </div>
           </div>
-    </section>
+        </section>
 
     <!-- Footer -->
     <div
-      class="footer d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-evenly col-md-12 gap-5 gap-md-0 p-5"
+      class="footer d-flex flex-column flex-md-row align-items-start justify-content-evenly col-md-12 gap-5 gap-md-0 p-4 p-md-5"
     >
-      <!-- Address -->
+      <!-- Logo -->
       <div
-        class="d-flex flex-column align-items-center justify-content-center col-md-3"
+        class="d-flex d-md-none flex-column align-items-start justify-content-center col-12 col-md-3 order-0"
       >
         <div
           class="d-flex flex-column align-items-center align-items-md-start gap-2 gap-md-4"
@@ -636,65 +672,78 @@
             src="assets/img/data-hidrolik-logo-beyaz.webp"
             alt=""
           />
-          <p>
-            Istanbul Deri Organize Sanayi Bölgesi
-            <br />
-            Yan Sanayi Cad. No:11 YA-8 Özel Parsel,
-            <br />
-            34953 Tuzla / İstanbul
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div
+        class="d-flex flex-column align-items-start justify-content-center col-12 col-md-3 order-4 order-md-0"
+      >
+        <div class="d-flex flex-column align-items-start gap-3 gap-md-4">
+          <img
+            class="d-none d-md-block img-fluid"
+            src="assets/img/data-hidrolik-logo-beyaz.webp"
+            alt=""
+          />
+          <p class="m-0">
+            Istanbul Deri Organize Sanayi Bölgesi Yan Sanayi Cad. No:11 YA-8
+            Özel Parsel, 34953 Tuzla / İstanbul
           </p>
-          <hr />
+          <hr class="m-0" />
           <p>info@datahidrolik.com</p>
         </div>
       </div>
 
-      <!-- About -->
-      <div
-        class="d-flex flex-column align-items-center justify-content-center col-md-2"
-      >
+      <!-- Links -->
+      <div class="d-flex flex-row col-12 col-md-5 order-2 order-md-1">
+        <!-- About -->
         <div
-          class="d-flex flex-column align-items-center align-items-md-start gap-3"
+          class="d-flex flex-column align-items-start align-items-md-center justify-content-start col-6"
         >
-          <div>HAKKIMIZDA</div>
-          <a href="history.html">TARİHÇE</a>
-          <a href="vision.html">VİZYON & MİSYON</a>
-          <a href="quality-policy.html">KALİTE POLİTİKAMIZ</a>
-          <a href="after-selling.html">SATIŞ SONRASI</a>
-          <a href="">MEDYA</a>
-          <a href="certificates.html">KALİTE</a>
-          <a href="fields.html">ALANLAR</a>
-          <a href="sss.html">S.S.S</a>
-          <a href="blog.html">BLOG</a>
+          <div class="d-flex flex-column align-items-start gap-3">
+            <div>HAKKIMIZDA</div>
+            <a href="history.html">TARİHÇE</a>
+            <a href="vision.html">VİZYON & MİSYON</a>
+            <a href="quality-policy.html">KALİTE POLİTİKAMIZ</a>
+            <a href="after-selling.html">SATIŞ SONRASI</a>
+            <a href="">MEDYA</a>
+            <a href="certificates.html">KALİTE</a>
+            <a href="fields.html">ALANLAR</a>
+            <a href="sss.html">S.S.S</a>
+            <a href="blog.html">BLOG</a>
+          </div>
         </div>
-      </div>
 
-      <!-- Products -->
-      <div
-        class="d-flex flex-column align-items-center justify-content-center col-md-3"
-      >
+        <!-- Products -->
         <div
-          class="d-flex flex-column align-items-center align-items-md-start gap-3"
+          class="d-flex flex-column align-items-start align-items-md-center justify-content-start col-6"
         >
-          <div>ÜRÜNLER</div>
-          <a href="products-detail.html">DÜMEN SİSTEMLERİ</a>
-          <a href="products-detail.html">PALAMAR KANCASI</a>
-          <a href="products-detail.html">PALAMAR TUTUCU</a>
-          <a href="products-detail.html">VİNÇLER</a>
-          <a href="products-detail.html">ÖZEL ÜRÜNLER</a>
-          <a href="products-detail.html">ZİNCİR IRGATLARI & MANEVRA IRGATLARI</a>
+          <div class="d-flex flex-column align-items-start gap-3">
+            <div>ÜRÜNLER</div>
+            <a href="products-detail.html">DÜMEN SİSTEMLERİ</a>
+            <a href="products-detail.html">PALAMAR KANCASI</a>
+            <a href="products-detail.html">PALAMAR TUTUCU</a>
+            <a href="products-detail.html">VİNÇLER</a>
+            <a href="products-detail.html">ÖZEL ÜRÜNLER</a>
+            <a href="products-detail.html"
+              >ZİNCİR IRGATLARI & MANEVRA IRGATLARI</a
+            >
+          </div>
         </div>
       </div>
 
       <!-- Mail -->
       <div
-        class="d-flex flex-column align-items-center justify-content-center col-md-4"
+        class="d-flex flex-column align-items-center justify-content-center col-12 col-md-4 order-1 order-md-2"
       >
         <div
-          class="d-flex flex-column align-items-center align-items-md-end col-12 gap-3"
+          class="d-flex flex-column align-items-start align-items-md-end col-12 gap-3"
         >
-          <div>HABERLER, GÜNCELLEMELER İÇİN KAYDOLUN!</div>
+          <div style="font-weight: 500">
+            HABERLER, GÜNCELLEMELER İÇİN KAYDOLUN!
+          </div>
           <input placeholder="E-POSTA" type="text" />
-          <div class="d-flex flex-row gap-3">
+          <div class="d-none d-md-flex flex-row gap-3">
             <a href="" class="social-icons">
               <i class="bi bi-instagram"></i>
             </a>
@@ -710,6 +759,21 @@
           </div>
         </div>
       </div>
+      <!-- Icons -->
+      <div class="d-flex d-md-none flex-row gap-3 order-5">
+        <a href="" class="social-icons">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="" class="social-icons">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="social-icons">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="" class="social-icons">
+          <i class="bi bi-youtube"></i>
+        </a>
+      </div>
     </div>
 
     <!-- Bottom Bar -->
@@ -717,12 +781,15 @@
       class="bottom-bar d-flex flex-column align-items-center flex-md-row col-md-12 px-4 py-3 gap-2 gap-md-0"
     >
       <div
-        class="d-flex flex-column flex-md-row align-items-center justify-content-evenly col-md-6"
+        class="d-flex flex-column flex-md-row align-items-center justify-content-evenly col-md-6 gap-3 gap-md-0"
       >
-        <a href="">İK DEĞERLERİMİZ</a>&#x2022;
-        <a href="">GİZLİLİK POLİTİKASI</a>&#x2022;
+        <a href="">İK DEĞERLERİMİZ</a
+        ><span class="d-none d-md-block">&#x2022;</span>
+        <a href="">GİZLİLİK POLİTİKASI</a
+        ><span class="d-none d-md-block">&#x2022;</span>
         <a href="">ŞARTLAR VE KOŞULLAR</a>
       </div>
+      <hr class="m-0" />
       <div class="col-md-6 px-1">
         <p class="m-auto">Copyright © 2023, Data Hidrolik</p>
       </div>
@@ -792,6 +859,22 @@
           }
         }
       }
+            // Mobile Search icon click event
+            document
+        .getElementById("searchIcon")
+        .addEventListener("click", function () {
+          document.getElementById("searchIcon").classList.add("d-none");
+          document.getElementById("searchForm").classList.remove("d-none");
+          document.getElementById("closeIcon").classList.remove("d-none");
+        });
+
+      document
+        .getElementById("closeIcon")
+        .addEventListener("click", function () {
+          document.getElementById("searchIcon").classList.remove("d-none");
+          document.getElementById("searchForm").classList.add("d-none");
+          document.getElementById("closeIcon").classList.add("d-none");
+        });
     </script>
   </body>
 </html>
