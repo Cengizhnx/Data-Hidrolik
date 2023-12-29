@@ -2091,6 +2091,12 @@
     font-size: 20px;
     line-height: 30px;
   }
+  .fields > div > div > div > img {
+    object-fit: cover;
+    height: 299px;
+    width: 350px !important;
+    border-radius: 8px;
+  }
   .caption,
   .caption-search,
   .caption-search > span {
@@ -2116,11 +2122,23 @@
     font-size: 22px;
     line-height: 30px;
   }
+  .certificates-img img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 300px;
+    width: 500px !important;
+  }
   .fields > div > div {
     border-bottom: none;
   }
   .fields > div > div:nth-child(odd) {
     border-right: none;
+  }
+  .product-detail-list > ul > li {
+    border-bottom: 1px solid var(--color-primary-blue) !important;
+  }
+  .product-detail-list > ul > li:last-child {
+    border-bottom: none !important;
   }
   .product-detail-list > ul > li > span {
     font-size: 12px;
@@ -2433,13 +2451,6 @@
     font-size: 17px;
     line-height: 17px;
   }
-  .timeline div div {
-    font-size: 26px;
-  }
-  .timeline div p {
-    font-size: 11px;
-    line-height: 12px;
-  }
   .vision h1,
   .vision div div {
     font-size: 44px;
@@ -2704,13 +2715,6 @@
   }
   .bottom-bar div > p {
     font-size: 10px;
-  }
-  .timeline div div {
-    font-size: 23px;
-  }
-  .timeline div p {
-    font-size: 10.5px;
-    line-height: 11px;
   }
   .vision h1,
   .vision div div {
