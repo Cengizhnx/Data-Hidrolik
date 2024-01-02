@@ -905,6 +905,49 @@
   text-align: center;
 }
 
+/* Arge */
+
+.arge-caption {
+  font-family: var(--default-font-medium);
+  color: var(--color-primary-blue);
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.arge-alt-caption {
+  font-family: var(--default-font-regular);
+  color: #000;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.arge-list ul li {
+  list-style: none;
+}
+
+.arge-list ul li div {
+  font-weight: 600 !important;
+  margin-bottom: 5px;
+}
+
+.arge-list ul li div,
+.arge-list ul li p,
+.arge-list p {
+  font-family: var(--default-font-regular);
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.arge-list-hr {
+  border: 1px solid var(--color-dark-grey);
+  width: 50%;
+  margin: 4px auto;
+}
+
 /* Quality Policy */
 
 .quality-policy > p,
@@ -1387,6 +1430,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 19px;
+  text-align: start;
 }
 
 .faq-list {
@@ -1402,7 +1446,7 @@
   font-family: var(--default-font-regular);
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 20px;
   text-align: start;
 }
 
@@ -1971,6 +2015,20 @@
   }
   video {
     height: 400px;
+  }
+  .arge-caption {
+    font-size: 15.5px;
+  }
+
+  .arge-alt-caption {
+    font-size: 14px;
+  }
+
+  .arge-list ul li div,
+  .arge-list ul li p,
+  .arge-list p {
+    font-size: 13px;
+    line-height: 20px;
   }
 }
 
@@ -2591,8 +2649,8 @@
     line-height: 15px;
   }
   .faq-list-row > div > p {
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 11.5px;
+    line-height: 17.5px;
   }
   .faq-help > div > input,
   .faq-help > div > select,
@@ -2632,6 +2690,17 @@
   }
   .footer > div > div > input {
     width: 100%;
+  }
+  .arge-caption {
+    font-size: 15px;
+  }
+  .arge-alt-caption {
+    font-size: 13.5px;
+  }
+  .arge-list ul li div,
+  .arge-list ul li p,
+  .arge-list p {
+    font-size: 12.5px;
   }
 }
 
@@ -2854,8 +2923,7 @@
     line-height: 12.5px;
   }
   .faq-list-row > div > p {
-    font-size: 10px;
-    line-height: 11.5px;
+    font-size: 11px;
   }
   .faq-help > div > input,
   .faq-help > div > select,
@@ -2895,6 +2963,17 @@
   }
   .footer > div > div > p {
     width: 100%;
+  }
+  .arge-caption {
+    font-size: 14.5px;
+  }
+  .arge-alt-caption {
+    font-size: 13px;
+  }
+  .arge-list ul li div,
+  .arge-list ul li p,
+  .arge-list p {
+    font-size: 12px;
   }
 }
 
