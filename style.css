@@ -1471,6 +1471,7 @@
 .faq-help > form > input,
 .faq-help > div > select,
 .faq-help > div > textarea,
+.faq-help > form > textarea,
 .faq-help > div > div > input {
   font-family: var(--default-font-regular);
   background-color: #fff;
@@ -1484,6 +1485,15 @@
   line-height: 19.12px;
 }
 
+.faq-help > form > div > div > label{
+  font-family: var(--default-font-regular);
+  color: var(--color-dark);
+  font-weight: 400;
+  font-size: 14.5px;
+  line-height: 19.12px;
+}
+
+.faq-help > form > textarea,
 .faq-help > div > textarea {
   resize: none;
 }
@@ -2419,6 +2429,7 @@
   .faq-help > div > input,
   .faq-help > form > input,
   .faq-help > div > select,
+  .faq-help > form > textarea,
   .faq-help > div > textarea,
   .faq-help > div > div > input {
     padding: 13.5px;
@@ -2426,6 +2437,9 @@
     line-height: 15px;
     width: 75%;
     margin: auto;
+  }
+  .faq-help > form > div > div > label{
+    font-size: 13px;
   }
   .faq-list-button {
     width: 15px;
@@ -2660,11 +2674,15 @@
   .faq-help > div > input,
   .faq-help > form > input,
   .faq-help > div > select,
+  .faq-help > form > textarea,
   .faq-help > div > textarea,
   .faq-help > div > div > input {
     padding: 12px;
     font-size: 12px;
     line-height: 12.5px;
+  }
+  .faq-help > form > div > div > label{
+    font-size: 12.5px;
   }
   .faq-list-button {
     width: 13px;

@@ -355,7 +355,7 @@
         >
           <h1 class="caption pb-3 pb-md-5">Kariyer</h1>
           <div
-            class="quality-policy col-12 d-flex flex-wrap align-items-center justify-content-center gap-4 mb-2 mb-md-5"
+            class="quality-policy col-12 d-flex flex-wrap align-items-center justify-content-center gap-4 mb-2 mb-md-0"
           >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis metus ligula. Proin condimentum dapibus massa pharetra cursus. Nam iaculis vulputate suscipit. In hac habitasse
@@ -374,10 +374,23 @@ Nulla vitae eros congue, pharetra velit id, bibendum mauris. <br><br> <a href="a
           class="faq-help d-flex flex-column align-items-center justify-content-center my-5 mx-2 mx-md-5 mb-5 mt-0"
         >
         <form class="col-12 col-md-10 col-lg-8 col-xl-6 d-flex flex-column align-items-center gap-3">
+          <div class="d-flex flex-row align-items-center justify-content-center gap-4">
+          <div>
+            <input type="radio" id="job" name="application" value="İş">
+            <label for="job">İş Başvurusu</label><br>
+          </div>
+          <div>
+            <input type="radio" id="intern" name="application" value="Staj">
+            <label for="intern">Staj Başvurusu</label><br>
+          </div>
+          </div>
           <input type="text" id="adSoyad" placeholder="Ad Soyad" required>
           <input type="tel" id="telefon" placeholder="Telefon" required>
           <input type="email" id="email" placeholder="E-Mail" required>
+          <input type="date" id="dateTime" placeholder="Doğum Tarihi" required>
           <input type="file" id="cv" name="cv" required>
+          <textarea rows="4" placeholder="Adresiniz"></textarea>
+          <textarea rows="4" placeholder="Mesajınız"></textarea>
           <button type="submit">Gönder</button>
         </form>
       </div>
