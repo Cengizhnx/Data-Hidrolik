@@ -3153,11 +3153,11 @@
   .modal-body > hr {
     width: 50%;
   }
-  .faq-help > form > button,
+  /* .faq-help > form > button,
   .faq-help > div > button {
     padding: 8px 16px;
     font-size: 10.5px;
-  }
+  } */
   .faq-banner > div > div {
     font-size: 18px;
     line-height: 30px;
