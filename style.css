@@ -57,6 +57,11 @@
   border-bottom: 3px solid var(--color-primary-blue);
 } */
 
+.navbar-brand > img {
+  width: 57.5px;
+  height: 47.5px;
+}
+
 .navbar-nav .dropdown-menu {
   padding: 0;
 }
@@ -1485,7 +1490,7 @@
   line-height: 19.12px;
 }
 
-.faq-help > form > div > div > label{
+.faq-help > form > div > div > label {
   font-family: var(--default-font-regular);
   color: var(--color-dark);
   font-weight: 400;
@@ -2060,6 +2065,10 @@
     width: 450px;
     padding: 35px 5px;
   }
+  .carousel-inner > .carousel-item > img {
+    height: 850px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2438,7 +2447,7 @@
     width: 75%;
     margin: auto;
   }
-  .faq-help > form > div > div > label{
+  .faq-help > form > div > div > label {
     font-size: 13px;
   }
   .faq-list-button {
@@ -2681,7 +2690,7 @@
     font-size: 12px;
     line-height: 12.5px;
   }
-  .faq-help > form > div > div > label{
+  .faq-help > form > div > div > label {
     font-size: 12.5px;
   }
   .faq-list-button {
