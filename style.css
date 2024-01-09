@@ -1446,6 +1446,17 @@
   border-bottom: 0.5px solid var(--color-dark);
 }
 
+.faq-list-row > div > table > tbody > tr > th,
+.faq-list-row > div > table > thead > tr > th {
+  color: var(--color-dark);
+  font-family: var(--default-font-regular);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: start;
+}
+
+.faq-list-row > div > table > tbody > tr > td,
 .faq-list-row > div > p {
   color: var(--color-dark);
   font-family: var(--default-font-regular);
@@ -2676,6 +2687,9 @@
     font-size: 12px;
     line-height: 15px;
   }
+  .faq-list-row > div > table > tbody > tr > th,
+  .faq-list-row > div > table > thead > tr > th,
+  .faq-list-row > div > table > tbody > tr > td,
   .faq-list-row > div > p {
     font-size: 11.5px;
     line-height: 17.5px;
@@ -2956,6 +2970,10 @@
     font-size: 10.5px;
     line-height: 12.5px;
   }
+
+  .faq-list-row > div > table > tbody > tr > th,
+  .faq-list-row > div > table > thead > tr > th,
+  .faq-list-row > div > table > tbody > tr > td,
   .faq-list-row > div > p {
     font-size: 11px;
   }
