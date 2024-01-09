@@ -2076,10 +2076,10 @@
     width: 450px;
     padding: 35px 5px;
   }
-  .carousel-inner > .carousel-item > img {
+  /* .carousel-inner > .carousel-item > img {
     height: 850px;
     object-fit: cover;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
